@@ -1,0 +1,8 @@
+/data/test/
+/data/train/
+/data/val/
+/logs/*
+*.tar
+*.pth
+
+!/logs/readme
