@@ -23,26 +23,28 @@ import torchvision.models
 
 class Arg():
     def __init__(self,
-                 class_num=257,
+                 project_name='traffic_ResNet_224x224_16',
+                 class_num=62,
                  input_size=(32, 32),
                  lr=0.01,
-                 epoch=10,
+                 epoch=100,
                  cuda='cuda',
-                 train_root='./data/train',
-                 train_batch_size=64,
-                 val_root='./data/val',
-                 val_batch_size=64,
-                 load='load_params',
-                 model_type='LeNet',
-                 model_save_dir='./model_save/LeNet_test1',
-                 model_load_dir='./model_save/LeNet_test1.ckp.params.pth',
-                 log_dir='./logs/LeNet.log',
+                 train_root='../traffic/data/train',
+                 train_batch_size=16,
+                 val_root='../traffic/data/val',
+                 val_batch_size=16,
+                 load='make_model',
+                 model_type='ResNet',
+                 model_save_dir='./model_save',
+                 model_load_dir='./model_save/traffic.ckp.params.pth',
+                 log_dir='./logs',
                  save_mode='save_params',
-                 checkpoint_per_epoch=1,
+                 checkpoint_per_epoch=5,
                  using_tensorboardx=True,
-                 tensorboardx_file='./logs/LeNet_test1',
-                 verbose=0
+                 tensorboardx_file='./logs',
+                 verbose=1
                  ):
+        self.project_name = project_name
         self.class_num = class_num
         self.input_size = input_size
         self.lr = lr
@@ -66,6 +68,8 @@ class Arg():
 
 class Net(object):
     def __init__(self, args):
+
+        self.project_name = args.project_name
 
         self.class_num = args.class_num
 
@@ -94,9 +98,10 @@ class Net(object):
 
         self.load = args.load
         self.model_type = args.model_type
-        self.model_save_dir = args.model_save_dir
+        self.model_save_dir = os.path.join(
+            args.model_save_dir, args.project_name)
         self.model_load_dir = args.model_load_dir
-        self.log_dir = args.log_dir
+        self.log_dir = os.path.join(args.log_dir, args.project_name)
 
         self.verbose = args.verbose
 
@@ -105,7 +110,7 @@ class Net(object):
         self.val_loss = 0
         self.val_acc = 0.0
 
-        self.logger = utils.creat_logger(self.log_dir)
+        self.logger = utils.creat_logger(self.log_dir + '.log')
 
         self.checkpoint_data_struct = None
 
@@ -116,11 +121,18 @@ class Net(object):
         self.using_tensorboardx = args.using_tensorboardx
 
         if self.using_tensorboardx == True:
-            self.tensorboardx_file = args.tensorboardx_file
-            self.tb_writer = SummaryWriter(self.tensorboardx_file,comment=self.model_type)
+            self.tensorboardx_file = os.path.join(
+                args.tensorboardx_file, args.project_name)
+            self.tb_writer = SummaryWriter(
+                self.tensorboardx_file, comment=self.model_type)
         else:
             self.tb_writer = None
             self.tensorboardx_file = None
+
+        self.train_sample_size = 0
+        self.val_sample_size = 0
+
+        self.best_params = None
 
     def _make_model(self):
         if self.model_type == 'LeNet':
@@ -130,8 +142,14 @@ class Net(object):
             self.scheduler = optim.lr_scheduler.MultiStepLR(
                 self.optimizer, milestones=[75, 150], gamma=0.5)
             self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
+
         elif self.model_type == 'ResNet':
-            pass
+            self.model =  torchvision.models.ResNet(torchvision.models.resnet.BasicBlock,[2,2,2,2],self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.MultiStepLR(
+                self.optimizer, milestones=[75, 150], gamma=0.5)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
 
     def load_model(self):
 
@@ -172,7 +190,12 @@ class Net(object):
 
         val_datasets = datasets.ImageFolder(self.val_root, val_transform)
         self.val_loader = torch.utils.data.DataLoader(
-            train_datasets, batch_size=self.val_batch_size, shuffle=False, num_workers=8)
+            val_datasets, batch_size=self.val_batch_size, shuffle=False, num_workers=8)
+
+        self.train_sample_size = len(self.train_loader)
+        self.val_sample_size = len(self.val_loader)
+        print("train size:%d" % (self.train_sample_size))
+        print("train size:%d" % (self.val_sample_size))
 
     def train(self):
         if self.verbose == 1:
@@ -232,6 +255,9 @@ class Net(object):
         elif self.save_mode == 'save_params':
             torch.save(self.model, self.model_save_dir + '.params.pth')
 
+        torch.save(self.best_params,
+                   self.model_save_dir + 'best.params.pth')
+
     def run(self):
         self.load_data()
         self.load_model()
@@ -249,7 +275,17 @@ class Net(object):
             # if self.verbose == 1:
             #     print("loss: %.4f, acc: %.4f%%" % (self.loss, 100.0*self.acc))
             self.val_loss, self.val_acc = self.val()
-            accuracy = max(accuracy, self.val_acc)
+            if self.val_acc > accuracy:
+                accuracy = self.val_acc
+                self.best_params = {
+                    'total_epoch': self.total_epochs,
+                    'model_state_dict': self.model.state_dict(),
+                    'optimizer_state_dict': self.optimizer.state_dict(),
+                    'loss': self.loss,
+                    'acc': self.acc,
+                    'val_loss': self.val_loss,
+                    'val_acc': self.val_acc
+                }
 
             self.total_epochs = self.total_epochs + 1
 
@@ -293,6 +329,9 @@ class Net(object):
         torch.save(self.checkpoint_data_struct,
                    self.model_save_dir + '.ckp.params.pth')
 
+        torch.save(self.best_params,
+                   self.model_save_dir + '.best.ckp.params.pth')
+
     def imshow(self):
         # Get a batch of training data
         inputs, classes = next(iter(self.train_loader))
@@ -312,13 +351,14 @@ class Net(object):
 
     def tb_write(self):
         self.tb_writer.add_scalars(
-            'loss/epochs', {'train_loss':self.loss,'val_loss':self.val_loss}, self.total_epochs)
+            'loss/epochs', {'train_loss': self.loss, 'val_loss': self.val_loss}, self.total_epochs)
 
         self.tb_writer.add_scalars(
-            'acc/epochs', {'train_acc':self.acc,'val_acc':self.val_acc}, self.total_epochs)
+            'acc/epochs', {'train_acc': self.acc, 'val_acc': self.val_acc}, self.total_epochs)
 
 
 if __name__ == "__main__":
     args = Arg()
     net = Net(args)
     net.run()
+    # net.load_data()
