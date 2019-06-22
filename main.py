@@ -12,7 +12,7 @@ import logging
 import model
 import utils
 
-import efficientnet_pytorch
+from efficientnet_pytorch import EfficientNet
 
 import os
 
@@ -20,12 +20,11 @@ from tensorboardX import SummaryWriter
 
 import torchvision.models
 
-
 class Arg():
     def __init__(self,
-                 project_name='traffic_ResNet_224x224_16',
+                 project_name='traffic_VGG19bn_coslr_64x64_16_0.01',
                  class_num=62,
-                 input_size=(32, 32),
+                 input_size=(64, 64),
                  lr=0.01,
                  epoch=100,
                  cuda='cuda',
@@ -34,9 +33,9 @@ class Arg():
                  val_root='../traffic/data/val',
                  val_batch_size=16,
                  load='make_model',
-                 model_type='ResNet',
+                 model_type='VGG19bn',
                  model_save_dir='./model_save',
-                 model_load_dir='./model_save/traffic.ckp.params.pth',
+                 model_load_dir='./model_save/traffic_DesenNet_224x224_16.ckp.params.pth',
                  log_dir='./logs',
                  save_mode='save_params',
                  checkpoint_per_epoch=5,
@@ -65,7 +64,6 @@ class Arg():
         self.using_tensorboardx = using_tensorboardx
         self.tensorboardx_file = tensorboardx_file
 
-
 class Net(object):
     def __init__(self, args):
 
@@ -87,6 +85,10 @@ class Net(object):
 
         self.device = torch.device('cpu')
         self.cuda = args.cuda
+        if self.cuda == 'cuda':
+            self.device = torch.device('cuda')
+        else:
+            self.device = torch.device('cpu')
 
         self.train_root = args.train_root
         self.train_batch_size = args.train_batch_size
@@ -110,7 +112,8 @@ class Net(object):
         self.val_loss = 0
         self.val_acc = 0.0
 
-        self.logger = utils.creat_logger(self.log_dir + '.log')
+        self.logger_file_path = self.log_dir + '.log'
+        self.logger = utils.creat_logger(self.logger_file_path)
 
         self.checkpoint_data_struct = None
 
@@ -136,28 +139,50 @@ class Net(object):
 
     def _make_model(self):
         if self.model_type == 'LeNet':
-            self.model = model.LeNet(self.class_num).to(self.device)
+            self.model = model.LeNet(self.input_size,self.class_num).to(self.device)
             self.optimizer = optim.SGD(
                 self.model.parameters(), lr=self.lr, momentum=0.9)
-            self.scheduler = optim.lr_scheduler.MultiStepLR(
-                self.optimizer, milestones=[75, 150], gamma=0.5)
+            # self.scheduler = optim.lr_scheduler.StepLR(
+            #     self.optimizer,step_size = 25, gamma=0.5,last_epoch = -1)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
             self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
 
-        elif self.model_type == 'ResNet':
+        elif self.model_type == 'ResNet18':
             self.model =  torchvision.models.ResNet(torchvision.models.resnet.BasicBlock,[2,2,2,2],self.class_num).to(self.device)
             self.optimizer = optim.SGD(
                 self.model.parameters(), lr=self.lr, momentum=0.9)
-            self.scheduler = optim.lr_scheduler.MultiStepLR(
-                self.optimizer, milestones=[75, 150], gamma=0.5)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
             self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
+        
+        elif self.model_type == 'EfficientNetb0':
+            self.model = EfficientNet.from_name('efficientnet-b0').to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
+        
+        elif self.model_type == 'DesenNet':
+            self.model = torchvision.models.DenseNet(num_classes=self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device) 
+
+        elif self.model_type == 'VGG19bn':
+            cfg = [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 512, 512, 512, 512, 'M']
+            features = torchvision.models.vgg.make_layers(cfg,batch_norm = True)
+            self.model = torchvision.models.VGG(features = features,num_classes=self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)           
 
     def load_model(self):
-
-        if self.cuda == 'cuda':
-            self.device = torch.device('cuda')
-        else:
-            self.device = torch.device('cpu')
-
         if self.load == 'load_model':
             self.model = torch.load(self.model_load_dir).to(self.device)
         elif self.load == 'load_params':
@@ -166,6 +191,7 @@ class Net(object):
             self.model.load_state_dict(checkpoint_data['model_state_dict'])
             self.optimizer.load_state_dict(
                 checkpoint_data['optimizer_state_dict'])
+            self.scheduler.load_state_dict(checkpoint_data['scheduler_state_dict'])
             self.total_epochs = checkpoint_data['total_epoch']
             print(self.total_epochs)
         elif self.load == 'make_model':
@@ -194,8 +220,6 @@ class Net(object):
 
         self.train_sample_size = len(self.train_loader)
         self.val_sample_size = len(self.val_loader)
-        print("train size:%d" % (self.train_sample_size))
-        print("train size:%d" % (self.val_sample_size))
 
     def train(self):
         if self.verbose == 1:
@@ -256,11 +280,15 @@ class Net(object):
             torch.save(self.model, self.model_save_dir + '.params.pth')
 
         torch.save(self.best_params,
-                   self.model_save_dir + 'best.params.pth')
+                   self.model_save_dir + '.best.params.pth')
 
     def run(self):
         self.load_data()
         self.load_model()
+        train_info = ()
+        train_info = (" %s | train set size:%dx%d | val set size:%dx%d | input size:%s | class num:%d | lr: %f" 
+        % (self.model_type,self.train_sample_size,self.train_batch_size,self.val_sample_size,self.val_batch_size, str(self.input_size),self.class_num,self.lr))
+        self.logger.debug(train_info)
 
         accuracy = 0
         for epoch in range(1, self.epochs + 1):
@@ -269,11 +297,8 @@ class Net(object):
 
             self.scheduler.step(epoch)
 
-            # if self.verbose == 1:
-            #     print("\n===> epoch: %d/%d" % (epoch, self.epochs))
             self.loss, self.acc = self.train()
-            # if self.verbose == 1:
-            #     print("loss: %.4f, acc: %.4f%%" % (self.loss, 100.0*self.acc))
+
             self.val_loss, self.val_acc = self.val()
             if self.val_acc > accuracy:
                 accuracy = self.val_acc
@@ -281,20 +306,22 @@ class Net(object):
                     'total_epoch': self.total_epochs,
                     'model_state_dict': self.model.state_dict(),
                     'optimizer_state_dict': self.optimizer.state_dict(),
+                    'scheduler_state_dict':self.scheduler.state_dict(),
                     'loss': self.loss,
                     'acc': self.acc,
                     'val_loss': self.val_loss,
-                    'val_acc': self.val_acc
+                    'val_acc': self.val_acc,
+                    'model_type': self.model_type
                 }
+                
 
             self.total_epochs = self.total_epochs + 1
 
             epoch_time = time.time() - epoch_time
             epoch_time = utils.format_time(epoch_time)
             info = self.model_type
-            info += (" | epoch:%d/%d | tol_epoch:%d | loss:%.4f | acc:%5.1f%% | val_loss:%.4f | val_acc:%.4f%% | time:".format()
-                     % (epoch, self.epochs, self.total_epochs, self.loss, 100.0*self.acc, self.val_loss, 100.0*self.val_acc))
-            info = info + epoch_time
+            info += (" | epoch:%d/%d | tol_epoch:%d | loss:%.4f | acc:%5.1f%% | val_loss:%.4f | val_acc:%.4f%% | lr:%f | time: %s"
+                     % (epoch, self.epochs, self.total_epochs, self.loss, 100.0*self.acc, self.val_loss, 100.0*self.val_acc,self.scheduler.get_lr()[0] ,epoch_time))
             self.logger.info(info)
 
             if epoch % self.checkpoint_per_epoch == 0:
@@ -320,10 +347,12 @@ class Net(object):
             'total_epoch': self.total_epochs,
             'model_state_dict': self.model.state_dict(),
             'optimizer_state_dict': self.optimizer.state_dict(),
+            'scheduler_state_dict':self.scheduler.state_dict(),
             'loss': self.loss,
             'acc': self.acc,
             'val_loss': self.val_loss,
-            'val_acc': self.val_acc
+            'val_acc': self.val_acc,
+            'model_type': self.model_type
         }
 
         torch.save(self.checkpoint_data_struct,

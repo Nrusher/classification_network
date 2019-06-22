@@ -1,0 +1,101 @@
+[2019-06-22 20:15:21,632][DEBUG]:  EfficientNetb0 | train set size:286x16 | val set size:158x16 | input size:(64, 64) | class num:62 | lr: 0.010000
+[2019-06-22 20:15:59,461][INFO]: EfficientNetb0 | epoch:1/100 | tol_epoch:1 | loss:13.1422 | acc: 45.1% | val_loss:25.9310 | val_acc:1.9048% | lr:0.009986 | time: 37s829ms
+[2019-06-22 20:16:35,998][INFO]: EfficientNetb0 | epoch:2/100 | tol_epoch:2 | loss:6.1491 | acc: 71.9% | val_loss:11.5667 | val_acc:50.4762% | lr:0.009952 | time: 36s530ms
+[2019-06-22 20:17:12,702][INFO]: EfficientNetb0 | epoch:3/100 | tol_epoch:3 | loss:3.9082 | acc: 81.9% | val_loss:4.5988 | val_acc:78.6905% | lr:0.009904 | time: 36s703ms
+[2019-06-22 20:17:49,323][INFO]: EfficientNetb0 | epoch:4/100 | tol_epoch:4 | loss:2.8447 | acc: 86.7% | val_loss:4.0951 | val_acc:83.2937% | lr:0.009843 | time: 36s618ms
+[2019-06-22 20:18:26,162][INFO]: EfficientNetb0 | epoch:5/100 | tol_epoch:5 | loss:2.4931 | acc: 88.5% | val_loss:2.2908 | val_acc:90.0397% | lr:0.009769 | time: 36s838ms
+[2019-06-22 20:19:02,776][INFO]: EfficientNetb0 | epoch:6/100 | tol_epoch:6 | loss:1.7952 | acc: 91.4% | val_loss:2.0554 | val_acc:91.6667% | lr:0.009681 | time: 36s479ms
+[2019-06-22 20:19:39,417][INFO]: EfficientNetb0 | epoch:7/100 | tol_epoch:7 | loss:1.3908 | acc: 93.5% | val_loss:2.5167 | val_acc:89.4841% | lr:0.009581 | time: 36s639ms
+[2019-06-22 20:20:16,182][INFO]: EfficientNetb0 | epoch:8/100 | tol_epoch:8 | loss:1.2262 | acc: 94.2% | val_loss:2.2817 | val_acc:91.0714% | lr:0.009469 | time: 36s763ms
+[2019-06-22 20:20:52,558][INFO]: EfficientNetb0 | epoch:9/100 | tol_epoch:9 | loss:1.0410 | acc: 95.1% | val_loss:2.1869 | val_acc:91.1111% | lr:0.009344 | time: 36s375ms
+[2019-06-22 20:21:28,767][INFO]: EfficientNetb0 | epoch:10/100 | tol_epoch:10 | loss:0.8484 | acc: 95.8% | val_loss:1.8756 | val_acc:91.9841% | lr:0.009207 | time: 36s208ms
+[2019-06-22 20:22:05,411][INFO]: EfficientNetb0 | epoch:11/100 | tol_epoch:11 | loss:0.6569 | acc: 97.0% | val_loss:1.9572 | val_acc:92.9762% | lr:0.009059 | time: 36s511ms
+[2019-06-22 20:22:41,960][INFO]: EfficientNetb0 | epoch:12/100 | tol_epoch:12 | loss:0.6244 | acc: 97.1% | val_loss:2.2152 | val_acc:91.8254% | lr:0.008899 | time: 36s548ms
+[2019-06-22 20:23:18,423][INFO]: EfficientNetb0 | epoch:13/100 | tol_epoch:13 | loss:0.4638 | acc: 98.1% | val_loss:1.8943 | val_acc:92.7381% | lr:0.008729 | time: 36s461ms
+[2019-06-22 20:23:55,170][INFO]: EfficientNetb0 | epoch:14/100 | tol_epoch:14 | loss:0.3427 | acc: 98.4% | val_loss:1.3628 | val_acc:95.0794% | lr:0.008549 | time: 36s746ms
+[2019-06-22 20:24:31,903][INFO]: EfficientNetb0 | epoch:15/100 | tol_epoch:15 | loss:0.2522 | acc: 98.9% | val_loss:1.9196 | val_acc:92.4603% | lr:0.008359 | time: 36s731ms
+[2019-06-22 20:25:08,534][INFO]: EfficientNetb0 | epoch:16/100 | tol_epoch:16 | loss:0.2642 | acc: 98.9% | val_loss:1.3386 | val_acc:95.7143% | lr:0.008160 | time: 36s508ms
+[2019-06-22 20:25:45,406][INFO]: EfficientNetb0 | epoch:17/100 | tol_epoch:17 | loss:0.2582 | acc: 98.9% | val_loss:1.2882 | val_acc:95.8333% | lr:0.007952 | time: 36s871ms
+[2019-06-22 20:26:21,874][INFO]: EfficientNetb0 | epoch:18/100 | tol_epoch:18 | loss:0.3123 | acc: 98.8% | val_loss:1.7236 | val_acc:94.8810% | lr:0.007737 | time: 36s467ms
+[2019-06-22 20:26:58,193][INFO]: EfficientNetb0 | epoch:19/100 | tol_epoch:19 | loss:0.2196 | acc: 99.1% | val_loss:1.5011 | val_acc:95.4365% | lr:0.007513 | time: 36s318ms
+[2019-06-22 20:27:34,857][INFO]: EfficientNetb0 | epoch:20/100 | tol_epoch:20 | loss:0.2320 | acc: 99.1% | val_loss:1.4366 | val_acc:94.8810% | lr:0.007283 | time: 36s663ms
+[2019-06-22 20:28:11,338][INFO]: EfficientNetb0 | epoch:21/100 | tol_epoch:21 | loss:0.1202 | acc: 99.6% | val_loss:1.5452 | val_acc:94.8413% | lr:0.007047 | time: 36s361ms
+[2019-06-22 20:28:47,797][INFO]: EfficientNetb0 | epoch:22/100 | tol_epoch:22 | loss:0.1344 | acc: 99.5% | val_loss:1.3283 | val_acc:96.4286% | lr:0.006805 | time: 36s458ms
+[2019-06-22 20:29:24,401][INFO]: EfficientNetb0 | epoch:23/100 | tol_epoch:23 | loss:0.0657 | acc: 99.9% | val_loss:1.3878 | val_acc:95.9921% | lr:0.006558 | time: 36s597ms
+[2019-06-22 20:30:01,031][INFO]: EfficientNetb0 | epoch:24/100 | tol_epoch:24 | loss:0.0754 | acc: 99.7% | val_loss:1.3366 | val_acc:96.0714% | lr:0.006307 | time: 36s629ms
+[2019-06-22 20:30:37,516][INFO]: EfficientNetb0 | epoch:25/100 | tol_epoch:25 | loss:0.1171 | acc: 99.5% | val_loss:1.5283 | val_acc:95.1190% | lr:0.006053 | time: 36s484ms
+[2019-06-22 20:31:14,144][INFO]: EfficientNetb0 | epoch:26/100 | tol_epoch:26 | loss:0.0801 | acc: 99.7% | val_loss:1.2977 | val_acc:95.9127% | lr:0.005795 | time: 36s513ms
+[2019-06-22 20:31:50,593][INFO]: EfficientNetb0 | epoch:27/100 | tol_epoch:27 | loss:0.0561 | acc: 99.8% | val_loss:1.2708 | val_acc:96.2302% | lr:0.005536 | time: 36s447ms
+[2019-06-22 20:32:26,918][INFO]: EfficientNetb0 | epoch:28/100 | tol_epoch:28 | loss:0.0533 | acc: 99.8% | val_loss:1.2772 | val_acc:96.1111% | lr:0.005275 | time: 36s323ms
+[2019-06-22 20:33:03,245][INFO]: EfficientNetb0 | epoch:29/100 | tol_epoch:29 | loss:0.0273 | acc: 99.9% | val_loss:1.1398 | val_acc:96.7857% | lr:0.005013 | time: 36s325ms
+[2019-06-22 20:33:39,587][INFO]: EfficientNetb0 | epoch:30/100 | tol_epoch:30 | loss:0.0333 | acc:100.0% | val_loss:1.1541 | val_acc:96.7460% | lr:0.004751 | time: 36s341ms
+[2019-06-22 20:34:16,212][INFO]: EfficientNetb0 | epoch:31/100 | tol_epoch:31 | loss:0.0307 | acc: 99.9% | val_loss:1.1853 | val_acc:96.7063% | lr:0.004490 | time: 36s510ms
+[2019-06-22 20:34:52,639][INFO]: EfficientNetb0 | epoch:32/100 | tol_epoch:32 | loss:0.0170 | acc:100.0% | val_loss:1.2232 | val_acc:96.4286% | lr:0.004231 | time: 36s425ms
+[2019-06-22 20:35:29,181][INFO]: EfficientNetb0 | epoch:33/100 | tol_epoch:33 | loss:0.0129 | acc:100.0% | val_loss:1.2397 | val_acc:96.5079% | lr:0.003973 | time: 36s541ms
+[2019-06-22 20:36:05,670][INFO]: EfficientNetb0 | epoch:34/100 | tol_epoch:34 | loss:0.0150 | acc:100.0% | val_loss:1.1737 | val_acc:96.8254% | lr:0.003719 | time: 36s487ms
+[2019-06-22 20:36:42,018][INFO]: EfficientNetb0 | epoch:35/100 | tol_epoch:35 | loss:0.0121 | acc:100.0% | val_loss:1.1525 | val_acc:96.7460% | lr:0.003468 | time: 36s347ms
+[2019-06-22 20:37:18,786][INFO]: EfficientNetb0 | epoch:36/100 | tol_epoch:36 | loss:0.0304 | acc: 99.9% | val_loss:1.1970 | val_acc:96.7857% | lr:0.003221 | time: 36s652ms
+[2019-06-22 20:37:55,421][INFO]: EfficientNetb0 | epoch:37/100 | tol_epoch:37 | loss:0.0096 | acc:100.0% | val_loss:1.1629 | val_acc:96.9048% | lr:0.002979 | time: 36s633ms
+[2019-06-22 20:38:32,100][INFO]: EfficientNetb0 | epoch:38/100 | tol_epoch:38 | loss:0.0210 | acc: 99.9% | val_loss:1.2129 | val_acc:96.8254% | lr:0.002743 | time: 36s677ms
+[2019-06-22 20:39:08,578][INFO]: EfficientNetb0 | epoch:39/100 | tol_epoch:39 | loss:0.0118 | acc:100.0% | val_loss:1.1890 | val_acc:96.8651% | lr:0.002513 | time: 36s475ms
+[2019-06-22 20:39:45,081][INFO]: EfficientNetb0 | epoch:40/100 | tol_epoch:40 | loss:0.0105 | acc:100.0% | val_loss:1.2649 | val_acc:96.3889% | lr:0.002289 | time: 36s494ms
+[2019-06-22 20:40:21,986][INFO]: EfficientNetb0 | epoch:41/100 | tol_epoch:41 | loss:0.0103 | acc:100.0% | val_loss:1.1987 | val_acc:96.9841% | lr:0.002074 | time: 36s781ms
+[2019-06-22 20:40:58,637][INFO]: EfficientNetb0 | epoch:42/100 | tol_epoch:42 | loss:0.0093 | acc:100.0% | val_loss:1.1674 | val_acc:97.0635% | lr:0.001866 | time: 36s650ms
+[2019-06-22 20:41:35,321][INFO]: EfficientNetb0 | epoch:43/100 | tol_epoch:43 | loss:0.0170 | acc: 99.9% | val_loss:1.2532 | val_acc:96.5476% | lr:0.001667 | time: 36s682ms
+[2019-06-22 20:42:12,257][INFO]: EfficientNetb0 | epoch:44/100 | tol_epoch:44 | loss:0.0105 | acc:100.0% | val_loss:1.2084 | val_acc:96.8254% | lr:0.001477 | time: 36s935ms
+[2019-06-22 20:42:49,103][INFO]: EfficientNetb0 | epoch:45/100 | tol_epoch:45 | loss:0.0083 | acc:100.0% | val_loss:1.2152 | val_acc:96.8254% | lr:0.001296 | time: 36s845ms
+[2019-06-22 20:43:26,036][INFO]: EfficientNetb0 | epoch:46/100 | tol_epoch:46 | loss:0.0095 | acc:100.0% | val_loss:1.2141 | val_acc:96.7460% | lr:0.001126 | time: 36s778ms
+[2019-06-22 20:44:02,595][INFO]: EfficientNetb0 | epoch:47/100 | tol_epoch:47 | loss:0.0086 | acc:100.0% | val_loss:1.2136 | val_acc:96.9048% | lr:0.000967 | time: 36s557ms
+[2019-06-22 20:44:39,210][INFO]: EfficientNetb0 | epoch:48/100 | tol_epoch:48 | loss:0.0089 | acc:100.0% | val_loss:1.2016 | val_acc:97.0238% | lr:0.000818 | time: 36s614ms
+[2019-06-22 20:45:15,899][INFO]: EfficientNetb0 | epoch:49/100 | tol_epoch:49 | loss:0.0094 | acc:100.0% | val_loss:1.2011 | val_acc:97.1429% | lr:0.000681 | time: 36s686ms
+[2019-06-22 20:45:52,366][INFO]: EfficientNetb0 | epoch:50/100 | tol_epoch:50 | loss:0.0096 | acc:100.0% | val_loss:1.1999 | val_acc:96.9841% | lr:0.000556 | time: 36s465ms
+[2019-06-22 20:46:29,027][INFO]: EfficientNetb0 | epoch:51/100 | tol_epoch:51 | loss:0.0092 | acc:100.0% | val_loss:1.2129 | val_acc:97.0238% | lr:0.000443 | time: 36s540ms
+[2019-06-22 20:47:05,529][INFO]: EfficientNetb0 | epoch:52/100 | tol_epoch:52 | loss:0.0115 | acc:100.0% | val_loss:1.1952 | val_acc:97.0238% | lr:0.000343 | time: 36s500ms
+[2019-06-22 20:47:42,107][INFO]: EfficientNetb0 | epoch:53/100 | tol_epoch:53 | loss:0.0084 | acc:100.0% | val_loss:1.2030 | val_acc:97.0238% | lr:0.000255 | time: 36s576ms
+[2019-06-22 20:48:18,688][INFO]: EfficientNetb0 | epoch:54/100 | tol_epoch:54 | loss:0.0075 | acc:100.0% | val_loss:1.1994 | val_acc:97.0238% | lr:0.000180 | time: 36s580ms
+[2019-06-22 20:48:55,140][INFO]: EfficientNetb0 | epoch:55/100 | tol_epoch:55 | loss:0.0083 | acc:100.0% | val_loss:1.2217 | val_acc:96.9444% | lr:0.000119 | time: 36s451ms
+[2019-06-22 20:49:31,742][INFO]: EfficientNetb0 | epoch:56/100 | tol_epoch:56 | loss:0.0069 | acc:100.0% | val_loss:1.2093 | val_acc:97.0238% | lr:0.000070 | time: 36s487ms
+[2019-06-22 20:50:08,379][INFO]: EfficientNetb0 | epoch:57/100 | tol_epoch:57 | loss:0.0103 | acc:100.0% | val_loss:1.1996 | val_acc:96.9841% | lr:0.000035 | time: 36s635ms
+[2019-06-22 20:50:44,934][INFO]: EfficientNetb0 | epoch:58/100 | tol_epoch:58 | loss:0.0084 | acc:100.0% | val_loss:1.2020 | val_acc:97.0238% | lr:0.000012 | time: 36s553ms
+[2019-06-22 20:51:21,646][INFO]: EfficientNetb0 | epoch:59/100 | tol_epoch:59 | loss:0.0079 | acc:100.0% | val_loss:1.2167 | val_acc:97.0635% | lr:0.000002 | time: 36s710ms
+[2019-06-22 20:51:58,216][INFO]: EfficientNetb0 | epoch:60/100 | tol_epoch:60 | loss:0.0088 | acc:100.0% | val_loss:1.2110 | val_acc:96.9841% | lr:0.000000 | time: 36s569ms
+[2019-06-22 20:52:35,144][INFO]: EfficientNetb0 | epoch:61/100 | tol_epoch:61 | loss:0.0091 | acc:100.0% | val_loss:1.1969 | val_acc:97.0238% | lr:0.000014 | time: 36s811ms
+[2019-06-22 20:53:11,545][INFO]: EfficientNetb0 | epoch:62/100 | tol_epoch:62 | loss:0.0072 | acc:100.0% | val_loss:1.2167 | val_acc:96.9841% | lr:0.000109 | time: 36s399ms
+[2019-06-22 20:53:48,177][INFO]: EfficientNetb0 | epoch:63/100 | tol_epoch:63 | loss:0.0078 | acc:100.0% | val_loss:1.2148 | val_acc:96.9444% | lr:0.000138 | time: 36s631ms
+[2019-06-22 20:54:25,011][INFO]: EfficientNetb0 | epoch:64/100 | tol_epoch:64 | loss:0.0077 | acc:100.0% | val_loss:1.2115 | val_acc:97.0238% | lr:0.000194 | time: 36s831ms
+[2019-06-22 20:55:01,823][INFO]: EfficientNetb0 | epoch:65/100 | tol_epoch:65 | loss:0.0072 | acc:100.0% | val_loss:1.2129 | val_acc:96.9841% | lr:0.000266 | time: 36s810ms
+[2019-06-22 20:55:38,679][INFO]: EfficientNetb0 | epoch:66/100 | tol_epoch:66 | loss:0.0098 | acc:100.0% | val_loss:1.2007 | val_acc:96.9841% | lr:0.000352 | time: 36s737ms
+[2019-06-22 20:56:15,236][INFO]: EfficientNetb0 | epoch:67/100 | tol_epoch:67 | loss:0.0109 | acc:100.0% | val_loss:1.2193 | val_acc:96.8651% | lr:0.000451 | time: 36s555ms
+[2019-06-22 20:56:52,018][INFO]: EfficientNetb0 | epoch:68/100 | tol_epoch:68 | loss:0.0093 | acc:100.0% | val_loss:1.1991 | val_acc:96.9444% | lr:0.000563 | time: 36s780ms
+[2019-06-22 20:57:28,734][INFO]: EfficientNetb0 | epoch:69/100 | tol_epoch:69 | loss:0.0079 | acc:100.0% | val_loss:1.1989 | val_acc:96.9444% | lr:0.000687 | time: 36s714ms
+[2019-06-22 20:58:05,230][INFO]: EfficientNetb0 | epoch:70/100 | tol_epoch:70 | loss:0.0103 | acc:100.0% | val_loss:1.1776 | val_acc:97.0635% | lr:0.000823 | time: 36s495ms
+[2019-06-22 20:58:41,795][INFO]: EfficientNetb0 | epoch:71/100 | tol_epoch:71 | loss:0.0095 | acc:100.0% | val_loss:1.1903 | val_acc:97.0635% | lr:0.000971 | time: 36s442ms
+[2019-06-22 20:59:18,334][INFO]: EfficientNetb0 | epoch:72/100 | tol_epoch:72 | loss:0.0080 | acc:100.0% | val_loss:1.1842 | val_acc:97.1825% | lr:0.001130 | time: 36s537ms
+[2019-06-22 20:59:54,893][INFO]: EfficientNetb0 | epoch:73/100 | tol_epoch:73 | loss:0.0065 | acc:100.0% | val_loss:1.1763 | val_acc:97.1825% | lr:0.001300 | time: 36s558ms
+[2019-06-22 21:00:31,388][INFO]: EfficientNetb0 | epoch:74/100 | tol_epoch:74 | loss:0.0053 | acc:100.0% | val_loss:1.1886 | val_acc:97.1429% | lr:0.001480 | time: 36s493ms
+[2019-06-22 21:01:08,047][INFO]: EfficientNetb0 | epoch:75/100 | tol_epoch:75 | loss:0.0057 | acc:100.0% | val_loss:1.1949 | val_acc:97.1429% | lr:0.001670 | time: 36s657ms
+[2019-06-22 21:01:44,813][INFO]: EfficientNetb0 | epoch:76/100 | tol_epoch:76 | loss:0.0076 | acc:100.0% | val_loss:1.1873 | val_acc:97.1032% | lr:0.001869 | time: 36s641ms
+[2019-06-22 21:02:21,530][INFO]: EfficientNetb0 | epoch:77/100 | tol_epoch:77 | loss:0.0066 | acc:100.0% | val_loss:1.1859 | val_acc:97.1825% | lr:0.002076 | time: 36s716ms
+[2019-06-22 21:02:57,978][INFO]: EfficientNetb0 | epoch:78/100 | tol_epoch:78 | loss:0.0079 | acc:100.0% | val_loss:1.1920 | val_acc:97.1032% | lr:0.002292 | time: 36s445ms
+[2019-06-22 21:03:34,787][INFO]: EfficientNetb0 | epoch:79/100 | tol_epoch:79 | loss:0.0067 | acc:100.0% | val_loss:1.1864 | val_acc:97.0635% | lr:0.002515 | time: 36s808ms
+[2019-06-22 21:04:11,347][INFO]: EfficientNetb0 | epoch:80/100 | tol_epoch:80 | loss:0.0152 | acc: 99.9% | val_loss:1.1878 | val_acc:97.0238% | lr:0.002745 | time: 36s558ms
+[2019-06-22 21:04:48,139][INFO]: EfficientNetb0 | epoch:81/100 | tol_epoch:81 | loss:0.0083 | acc:100.0% | val_loss:1.1939 | val_acc:97.1429% | lr:0.002981 | time: 36s672ms
+[2019-06-22 21:05:24,724][INFO]: EfficientNetb0 | epoch:82/100 | tol_epoch:82 | loss:0.0072 | acc:100.0% | val_loss:1.2072 | val_acc:97.0635% | lr:0.003223 | time: 36s584ms
+[2019-06-22 21:06:01,516][INFO]: EfficientNetb0 | epoch:83/100 | tol_epoch:83 | loss:0.0068 | acc:100.0% | val_loss:1.1901 | val_acc:97.1429% | lr:0.003470 | time: 36s790ms
+[2019-06-22 21:06:38,159][INFO]: EfficientNetb0 | epoch:84/100 | tol_epoch:84 | loss:0.0065 | acc:100.0% | val_loss:1.2157 | val_acc:96.9048% | lr:0.003721 | time: 36s639ms
+[2019-06-22 21:07:14,756][INFO]: EfficientNetb0 | epoch:85/100 | tol_epoch:85 | loss:0.0078 | acc:100.0% | val_loss:1.2495 | val_acc:97.0635% | lr:0.003975 | time: 36s596ms
+[2019-06-22 21:07:51,446][INFO]: EfficientNetb0 | epoch:86/100 | tol_epoch:86 | loss:0.0123 | acc:100.0% | val_loss:1.2440 | val_acc:97.0238% | lr:0.004232 | time: 36s569ms
+[2019-06-22 21:08:28,082][INFO]: EfficientNetb0 | epoch:87/100 | tol_epoch:87 | loss:0.0064 | acc:100.0% | val_loss:1.2634 | val_acc:96.7460% | lr:0.004492 | time: 36s636ms
+[2019-06-22 21:09:04,565][INFO]: EfficientNetb0 | epoch:88/100 | tol_epoch:88 | loss:0.0082 | acc:100.0% | val_loss:1.2766 | val_acc:96.9444% | lr:0.004753 | time: 36s476ms
+[2019-06-22 21:09:41,037][INFO]: EfficientNetb0 | epoch:89/100 | tol_epoch:89 | loss:0.0053 | acc:100.0% | val_loss:1.2519 | val_acc:97.0635% | lr:0.005014 | time: 36s470ms
+[2019-06-22 21:10:17,540][INFO]: EfficientNetb0 | epoch:90/100 | tol_epoch:90 | loss:0.0051 | acc:100.0% | val_loss:1.2398 | val_acc:97.0238% | lr:0.005276 | time: 36s503ms
+[2019-06-22 21:10:54,447][INFO]: EfficientNetb0 | epoch:91/100 | tol_epoch:91 | loss:0.0054 | acc:100.0% | val_loss:1.2377 | val_acc:97.0635% | lr:0.005537 | time: 36s789ms
+[2019-06-22 21:11:30,967][INFO]: EfficientNetb0 | epoch:92/100 | tol_epoch:92 | loss:0.0052 | acc:100.0% | val_loss:1.2284 | val_acc:97.1032% | lr:0.005797 | time: 36s519ms
+[2019-06-22 21:12:07,583][INFO]: EfficientNetb0 | epoch:93/100 | tol_epoch:93 | loss:0.0112 | acc:100.0% | val_loss:1.3371 | val_acc:96.7857% | lr:0.006054 | time: 36s614ms
+[2019-06-22 21:12:44,278][INFO]: EfficientNetb0 | epoch:94/100 | tol_epoch:94 | loss:0.0073 | acc:100.0% | val_loss:1.2818 | val_acc:96.6667% | lr:0.006308 | time: 36s692ms
+[2019-06-22 21:13:20,604][INFO]: EfficientNetb0 | epoch:95/100 | tol_epoch:95 | loss:0.0074 | acc:100.0% | val_loss:1.2979 | val_acc:96.8254% | lr:0.006559 | time: 36s325ms
+[2019-06-22 21:13:57,115][INFO]: EfficientNetb0 | epoch:96/100 | tol_epoch:96 | loss:0.0080 | acc:100.0% | val_loss:1.2829 | val_acc:96.8651% | lr:0.006806 | time: 36s392ms
+[2019-06-22 21:14:33,531][INFO]: EfficientNetb0 | epoch:97/100 | tol_epoch:97 | loss:0.0196 | acc: 99.9% | val_loss:1.4114 | val_acc:96.5476% | lr:0.007048 | time: 36s414ms
+[2019-06-22 21:15:09,950][INFO]: EfficientNetb0 | epoch:98/100 | tol_epoch:98 | loss:0.0116 | acc:100.0% | val_loss:1.3844 | val_acc:96.4683% | lr:0.007284 | time: 36s419ms
+[2019-06-22 21:15:46,482][INFO]: EfficientNetb0 | epoch:99/100 | tol_epoch:99 | loss:0.0069 | acc:100.0% | val_loss:1.3369 | val_acc:96.6667% | lr:0.007514 | time: 36s531ms
+[2019-06-22 21:16:22,802][INFO]: EfficientNetb0 | epoch:100/100 | tol_epoch:100 | loss:0.0075 | acc:100.0% | val_loss:1.4287 | val_acc:96.3095% | lr:0.007737 | time: 36s318ms

@@ -1,0 +1,101 @@
+[2019-06-22 16:50:23,877][DEBUG]:  LeNet | train set size:286x16 | val set size:158x16 | input size:(224, 224) | class num:62 | lr: 0.010000
+[2019-06-22 16:50:43,345][INFO]: LeNet | epoch:1/100 | tol_epoch:1 | loss:16.5073 | acc: 39.3% | val_loss:13.5148 | val_acc:49.8413% | lr:0.009992 | time: 19s468ms
+[2019-06-22 16:51:01,400][INFO]: LeNet | epoch:2/100 | tol_epoch:2 | loss:9.3047 | acc: 62.1% | val_loss:6.3853 | val_acc:74.3254% | lr:0.009973 | time: 18s49ms
+[2019-06-22 16:51:19,388][INFO]: LeNet | epoch:3/100 | tol_epoch:3 | loss:4.4412 | acc: 80.1% | val_loss:3.9399 | val_acc:82.1429% | lr:0.009946 | time: 17s986ms
+[2019-06-22 16:51:37,653][INFO]: LeNet | epoch:4/100 | tol_epoch:4 | loss:2.9040 | acc: 86.5% | val_loss:4.4096 | val_acc:79.8016% | lr:0.009912 | time: 18s264ms
+[2019-06-22 16:51:55,652][INFO]: LeNet | epoch:5/100 | tol_epoch:5 | loss:2.2939 | acc: 88.8% | val_loss:4.0277 | val_acc:84.2857% | lr:0.009870 | time: 17s995ms
+[2019-06-22 16:52:14,739][INFO]: LeNet | epoch:6/100 | tol_epoch:6 | loss:1.7521 | acc: 92.5% | val_loss:4.0539 | val_acc:85.2778% | lr:0.009820 | time: 17s934ms
+[2019-06-22 16:52:32,654][INFO]: LeNet | epoch:7/100 | tol_epoch:7 | loss:1.6466 | acc: 92.8% | val_loss:3.5074 | val_acc:86.9048% | lr:0.009763 | time: 17s913ms
+[2019-06-22 16:52:50,529][INFO]: LeNet | epoch:8/100 | tol_epoch:8 | loss:1.1413 | acc: 95.3% | val_loss:4.8254 | val_acc:84.4048% | lr:0.009699 | time: 17s874ms
+[2019-06-22 16:53:08,642][INFO]: LeNet | epoch:9/100 | tol_epoch:9 | loss:1.6824 | acc: 92.8% | val_loss:3.7949 | val_acc:85.6746% | lr:0.009627 | time: 18s111ms
+[2019-06-22 16:53:26,596][INFO]: LeNet | epoch:10/100 | tol_epoch:10 | loss:0.7399 | acc: 96.8% | val_loss:3.7224 | val_acc:87.5397% | lr:0.009548 | time: 17s936ms
+[2019-06-22 16:53:45,616][INFO]: LeNet | epoch:11/100 | tol_epoch:11 | loss:1.2494 | acc: 95.7% | val_loss:5.5494 | val_acc:79.6429% | lr:0.009463 | time: 17s925ms
+[2019-06-22 16:54:03,574][INFO]: LeNet | epoch:12/100 | tol_epoch:12 | loss:0.8573 | acc: 96.5% | val_loss:4.3800 | val_acc:87.7778% | lr:0.009370 | time: 17s956ms
+[2019-06-22 16:54:21,437][INFO]: LeNet | epoch:13/100 | tol_epoch:13 | loss:0.9338 | acc: 96.3% | val_loss:6.3665 | val_acc:84.0079% | lr:0.009271 | time: 17s860ms
+[2019-06-22 16:54:39,260][INFO]: LeNet | epoch:14/100 | tol_epoch:14 | loss:0.9743 | acc: 96.4% | val_loss:5.2567 | val_acc:86.6270% | lr:0.009165 | time: 17s821ms
+[2019-06-22 16:54:57,073][INFO]: LeNet | epoch:15/100 | tol_epoch:15 | loss:1.5277 | acc: 94.8% | val_loss:9.4483 | val_acc:79.4048% | lr:0.009053 | time: 17s811ms
+[2019-06-22 16:55:16,016][INFO]: LeNet | epoch:16/100 | tol_epoch:16 | loss:1.0763 | acc: 96.1% | val_loss:5.0211 | val_acc:85.4762% | lr:0.008934 | time: 17s923ms
+[2019-06-22 16:55:33,875][INFO]: LeNet | epoch:17/100 | tol_epoch:17 | loss:0.5956 | acc: 98.0% | val_loss:6.5707 | val_acc:84.8413% | lr:0.008810 | time: 17s858ms
+[2019-06-22 16:55:51,736][INFO]: LeNet | epoch:18/100 | tol_epoch:18 | loss:0.9742 | acc: 96.8% | val_loss:5.0999 | val_acc:85.1984% | lr:0.008679 | time: 17s860ms
+[2019-06-22 16:56:09,798][INFO]: LeNet | epoch:19/100 | tol_epoch:19 | loss:0.3678 | acc: 98.3% | val_loss:5.0424 | val_acc:87.7381% | lr:0.008543 | time: 18s59ms
+[2019-06-22 16:56:27,786][INFO]: LeNet | epoch:20/100 | tol_epoch:20 | loss:0.4314 | acc: 98.4% | val_loss:5.5613 | val_acc:87.1429% | lr:0.008402 | time: 17s982ms
+[2019-06-22 16:56:46,784][INFO]: LeNet | epoch:21/100 | tol_epoch:21 | loss:0.3972 | acc: 98.5% | val_loss:7.8055 | val_acc:85.1984% | lr:0.008255 | time: 17s923ms
+[2019-06-22 16:57:04,665][INFO]: LeNet | epoch:22/100 | tol_epoch:22 | loss:0.3882 | acc: 98.8% | val_loss:5.5880 | val_acc:87.1825% | lr:0.008103 | time: 17s878ms
+[2019-06-22 16:57:22,573][INFO]: LeNet | epoch:23/100 | tol_epoch:23 | loss:0.2994 | acc: 99.1% | val_loss:5.3730 | val_acc:87.2222% | lr:0.007946 | time: 17s906ms
+[2019-06-22 16:57:40,463][INFO]: LeNet | epoch:24/100 | tol_epoch:24 | loss:1.0647 | acc: 96.9% | val_loss:11.5618 | val_acc:77.6984% | lr:0.007785 | time: 17s888ms
+[2019-06-22 16:57:58,348][INFO]: LeNet | epoch:25/100 | tol_epoch:25 | loss:1.7185 | acc: 95.4% | val_loss:4.6994 | val_acc:87.5397% | lr:0.007620 | time: 17s883ms
+[2019-06-22 16:58:17,286][INFO]: LeNet | epoch:26/100 | tol_epoch:26 | loss:0.8910 | acc: 97.1% | val_loss:5.2064 | val_acc:87.2222% | lr:0.007451 | time: 17s857ms
+[2019-06-22 16:58:35,190][INFO]: LeNet | epoch:27/100 | tol_epoch:27 | loss:0.4884 | acc: 98.6% | val_loss:4.7692 | val_acc:88.8492% | lr:0.007277 | time: 17s900ms
+[2019-06-22 16:58:53,213][INFO]: LeNet | epoch:28/100 | tol_epoch:28 | loss:0.6268 | acc: 97.9% | val_loss:6.9121 | val_acc:86.2698% | lr:0.007101 | time: 18s22ms
+[2019-06-22 16:59:11,173][INFO]: LeNet | epoch:29/100 | tol_epoch:29 | loss:0.4064 | acc: 98.5% | val_loss:5.9667 | val_acc:87.2619% | lr:0.006921 | time: 17s945ms
+[2019-06-22 16:59:29,029][INFO]: LeNet | epoch:30/100 | tol_epoch:30 | loss:0.1958 | acc: 99.3% | val_loss:5.4495 | val_acc:89.1667% | lr:0.006738 | time: 17s854ms
+[2019-06-22 16:59:48,679][INFO]: LeNet | epoch:31/100 | tol_epoch:31 | loss:0.3548 | acc: 98.8% | val_loss:5.8983 | val_acc:87.1032% | lr:0.006553 | time: 17s913ms
+[2019-06-22 17:00:06,576][INFO]: LeNet | epoch:32/100 | tol_epoch:32 | loss:0.6350 | acc: 98.3% | val_loss:5.4763 | val_acc:86.7063% | lr:0.006365 | time: 17s896ms
+[2019-06-22 17:00:24,657][INFO]: LeNet | epoch:33/100 | tol_epoch:33 | loss:0.1822 | acc: 99.3% | val_loss:5.6626 | val_acc:87.8175% | lr:0.006175 | time: 18s80ms
+[2019-06-22 17:00:42,596][INFO]: LeNet | epoch:34/100 | tol_epoch:34 | loss:0.4636 | acc: 98.8% | val_loss:14.2492 | val_acc:81.7063% | lr:0.005983 | time: 17s938ms
+[2019-06-22 17:01:00,635][INFO]: LeNet | epoch:35/100 | tol_epoch:35 | loss:0.8359 | acc: 97.6% | val_loss:5.5241 | val_acc:87.2222% | lr:0.005790 | time: 18s37ms
+[2019-06-22 17:01:19,753][INFO]: LeNet | epoch:36/100 | tol_epoch:36 | loss:0.0910 | acc: 99.6% | val_loss:5.0856 | val_acc:87.0635% | lr:0.005595 | time: 18s53ms
+[2019-06-22 17:01:37,667][INFO]: LeNet | epoch:37/100 | tol_epoch:37 | loss:0.1191 | acc: 99.6% | val_loss:5.0341 | val_acc:88.1349% | lr:0.005400 | time: 17s912ms
+[2019-06-22 17:01:55,787][INFO]: LeNet | epoch:38/100 | tol_epoch:38 | loss:0.4936 | acc: 98.6% | val_loss:5.9729 | val_acc:84.2460% | lr:0.005204 | time: 18s119ms
+[2019-06-22 17:02:13,756][INFO]: LeNet | epoch:39/100 | tol_epoch:39 | loss:0.2967 | acc: 98.8% | val_loss:4.9203 | val_acc:88.2540% | lr:0.005007 | time: 17s967ms
+[2019-06-22 17:02:32,005][INFO]: LeNet | epoch:40/100 | tol_epoch:40 | loss:0.0803 | acc: 99.7% | val_loss:5.0730 | val_acc:87.9365% | lr:0.004811 | time: 18s248ms
+[2019-06-22 17:02:50,854][INFO]: LeNet | epoch:41/100 | tol_epoch:41 | loss:0.2924 | acc: 98.7% | val_loss:4.9813 | val_acc:87.6190% | lr:0.004615 | time: 17s837ms
+[2019-06-22 17:03:08,905][INFO]: LeNet | epoch:42/100 | tol_epoch:42 | loss:0.0557 | acc: 99.8% | val_loss:5.2199 | val_acc:87.7778% | lr:0.004420 | time: 18s49ms
+[2019-06-22 17:03:26,877][INFO]: LeNet | epoch:43/100 | tol_epoch:43 | loss:0.0464 | acc: 99.8% | val_loss:5.1718 | val_acc:88.5714% | lr:0.004225 | time: 17s971ms
+[2019-06-22 17:03:44,890][INFO]: LeNet | epoch:44/100 | tol_epoch:44 | loss:0.0242 | acc: 99.9% | val_loss:5.2340 | val_acc:88.8492% | lr:0.004032 | time: 18s11ms
+[2019-06-22 17:04:02,772][INFO]: LeNet | epoch:45/100 | tol_epoch:45 | loss:0.0173 | acc: 99.9% | val_loss:5.2771 | val_acc:88.6508% | lr:0.003840 | time: 17s878ms
+[2019-06-22 17:04:22,088][INFO]: LeNet | epoch:46/100 | tol_epoch:46 | loss:0.0113 | acc:100.0% | val_loss:5.4951 | val_acc:87.6587% | lr:0.003650 | time: 18s202ms
+[2019-06-22 17:04:40,067][INFO]: LeNet | epoch:47/100 | tol_epoch:47 | loss:0.0850 | acc: 99.8% | val_loss:5.1987 | val_acc:88.0952% | lr:0.003462 | time: 17s978ms
+[2019-06-22 17:04:57,928][INFO]: LeNet | epoch:48/100 | tol_epoch:48 | loss:0.0217 | acc: 99.9% | val_loss:5.1936 | val_acc:88.8095% | lr:0.003277 | time: 17s857ms
+[2019-06-22 17:05:15,772][INFO]: LeNet | epoch:49/100 | tol_epoch:49 | loss:0.0171 | acc: 99.9% | val_loss:5.0717 | val_acc:89.0079% | lr:0.003094 | time: 17s842ms
+[2019-06-22 17:05:33,594][INFO]: LeNet | epoch:50/100 | tol_epoch:50 | loss:0.0151 | acc: 99.9% | val_loss:5.1878 | val_acc:88.8095% | lr:0.002914 | time: 17s821ms
+[2019-06-22 17:05:52,534][INFO]: LeNet | epoch:51/100 | tol_epoch:51 | loss:0.0111 | acc:100.0% | val_loss:5.2484 | val_acc:89.0476% | lr:0.002737 | time: 17s861ms
+[2019-06-22 17:06:10,435][INFO]: LeNet | epoch:52/100 | tol_epoch:52 | loss:0.0063 | acc:100.0% | val_loss:5.2406 | val_acc:89.1667% | lr:0.002564 | time: 17s900ms
+[2019-06-22 17:06:28,252][INFO]: LeNet | epoch:53/100 | tol_epoch:53 | loss:0.0075 | acc:100.0% | val_loss:5.2625 | val_acc:89.0873% | lr:0.002395 | time: 17s816ms
+[2019-06-22 17:06:46,092][INFO]: LeNet | epoch:54/100 | tol_epoch:54 | loss:0.0055 | acc:100.0% | val_loss:5.2639 | val_acc:88.9683% | lr:0.002229 | time: 17s836ms
+[2019-06-22 17:07:03,967][INFO]: LeNet | epoch:55/100 | tol_epoch:55 | loss:0.0046 | acc:100.0% | val_loss:5.2832 | val_acc:89.0079% | lr:0.002068 | time: 17s873ms
+[2019-06-22 17:07:22,828][INFO]: LeNet | epoch:56/100 | tol_epoch:56 | loss:0.0043 | acc:100.0% | val_loss:5.2898 | val_acc:89.1270% | lr:0.001912 | time: 17s823ms
+[2019-06-22 17:07:40,681][INFO]: LeNet | epoch:57/100 | tol_epoch:57 | loss:0.0049 | acc:100.0% | val_loss:5.3089 | val_acc:89.0079% | lr:0.001760 | time: 17s852ms
+[2019-06-22 17:07:58,594][INFO]: LeNet | epoch:58/100 | tol_epoch:58 | loss:0.0041 | acc:100.0% | val_loss:5.3273 | val_acc:88.8889% | lr:0.001613 | time: 17s912ms
+[2019-06-22 17:08:16,442][INFO]: LeNet | epoch:59/100 | tol_epoch:59 | loss:0.0033 | acc:100.0% | val_loss:5.3423 | val_acc:88.9286% | lr:0.001472 | time: 17s846ms
+[2019-06-22 17:08:34,291][INFO]: LeNet | epoch:60/100 | tol_epoch:60 | loss:0.0036 | acc:100.0% | val_loss:5.3412 | val_acc:89.0476% | lr:0.001335 | time: 17s846ms
+[2019-06-22 17:08:53,240][INFO]: LeNet | epoch:61/100 | tol_epoch:61 | loss:0.0035 | acc:100.0% | val_loss:5.3481 | val_acc:89.0079% | lr:0.001205 | time: 17s864ms
+[2019-06-22 17:09:11,127][INFO]: LeNet | epoch:62/100 | tol_epoch:62 | loss:0.0037 | acc:100.0% | val_loss:5.3550 | val_acc:88.8492% | lr:0.001080 | time: 17s885ms
+[2019-06-22 17:09:28,962][INFO]: LeNet | epoch:63/100 | tol_epoch:63 | loss:0.0032 | acc:100.0% | val_loss:5.3583 | val_acc:88.8492% | lr:0.000962 | time: 17s832ms
+[2019-06-22 17:09:46,860][INFO]: LeNet | epoch:64/100 | tol_epoch:64 | loss:0.0031 | acc:100.0% | val_loss:5.3665 | val_acc:88.8889% | lr:0.000849 | time: 17s897ms
+[2019-06-22 17:10:04,707][INFO]: LeNet | epoch:65/100 | tol_epoch:65 | loss:0.0033 | acc:100.0% | val_loss:5.3747 | val_acc:88.8492% | lr:0.000744 | time: 17s845ms
+[2019-06-22 17:10:23,661][INFO]: LeNet | epoch:66/100 | tol_epoch:66 | loss:0.0030 | acc:100.0% | val_loss:5.3800 | val_acc:88.8492% | lr:0.000644 | time: 17s870ms
+[2019-06-22 17:10:41,619][INFO]: LeNet | epoch:67/100 | tol_epoch:67 | loss:0.0030 | acc:100.0% | val_loss:5.3794 | val_acc:88.8492% | lr:0.000552 | time: 17s957ms
+[2019-06-22 17:10:59,786][INFO]: LeNet | epoch:68/100 | tol_epoch:68 | loss:0.0029 | acc:100.0% | val_loss:5.3809 | val_acc:88.8492% | lr:0.000466 | time: 18s165ms
+[2019-06-22 17:11:17,703][INFO]: LeNet | epoch:69/100 | tol_epoch:69 | loss:0.0033 | acc:100.0% | val_loss:5.3831 | val_acc:88.8492% | lr:0.000387 | time: 17s916ms
+[2019-06-22 17:11:35,586][INFO]: LeNet | epoch:70/100 | tol_epoch:70 | loss:0.0030 | acc:100.0% | val_loss:5.3862 | val_acc:88.8889% | lr:0.000315 | time: 17s881ms
+[2019-06-22 17:11:54,530][INFO]: LeNet | epoch:71/100 | tol_epoch:71 | loss:0.0025 | acc:100.0% | val_loss:5.3876 | val_acc:88.8889% | lr:0.000251 | time: 17s925ms
+[2019-06-22 17:12:12,440][INFO]: LeNet | epoch:72/100 | tol_epoch:72 | loss:0.0034 | acc:100.0% | val_loss:5.3881 | val_acc:88.8889% | lr:0.000194 | time: 17s907ms
+[2019-06-22 17:12:30,338][INFO]: LeNet | epoch:73/100 | tol_epoch:73 | loss:0.0030 | acc:100.0% | val_loss:5.3892 | val_acc:88.8889% | lr:0.000144 | time: 17s897ms
+[2019-06-22 17:12:48,201][INFO]: LeNet | epoch:74/100 | tol_epoch:74 | loss:0.0029 | acc:100.0% | val_loss:5.3902 | val_acc:88.8889% | lr:0.000102 | time: 17s860ms
+[2019-06-22 17:13:06,080][INFO]: LeNet | epoch:75/100 | tol_epoch:75 | loss:0.0027 | acc:100.0% | val_loss:5.3908 | val_acc:88.8889% | lr:0.000067 | time: 17s878ms
+[2019-06-22 17:13:25,018][INFO]: LeNet | epoch:76/100 | tol_epoch:76 | loss:0.0031 | acc:100.0% | val_loss:5.3910 | val_acc:88.8889% | lr:0.000039 | time: 17s880ms
+[2019-06-22 17:13:43,212][INFO]: LeNet | epoch:77/100 | tol_epoch:77 | loss:0.0028 | acc:100.0% | val_loss:5.3911 | val_acc:88.8889% | lr:0.000020 | time: 18s193ms
+[2019-06-22 17:14:01,085][INFO]: LeNet | epoch:78/100 | tol_epoch:78 | loss:0.0024 | acc:100.0% | val_loss:5.3912 | val_acc:88.8889% | lr:0.000007 | time: 17s871ms
+[2019-06-22 17:14:18,947][INFO]: LeNet | epoch:79/100 | tol_epoch:79 | loss:0.0024 | acc:100.0% | val_loss:5.3913 | val_acc:88.8889% | lr:0.000001 | time: 17s860ms
+[2019-06-22 17:14:36,954][INFO]: LeNet | epoch:80/100 | tol_epoch:80 | loss:0.0032 | acc:100.0% | val_loss:5.3913 | val_acc:88.8889% | lr:0.000000 | time: 18s4ms
+[2019-06-22 17:14:55,913][INFO]: LeNet | epoch:81/100 | tol_epoch:81 | loss:0.0027 | acc:100.0% | val_loss:5.3913 | val_acc:88.8889% | lr:0.000008 | time: 17s904ms
+[2019-06-22 17:15:13,761][INFO]: LeNet | epoch:82/100 | tol_epoch:82 | loss:0.0028 | acc:100.0% | val_loss:5.3913 | val_acc:88.8889% | lr:0.000062 | time: 17s847ms
+[2019-06-22 17:15:31,863][INFO]: LeNet | epoch:83/100 | tol_epoch:83 | loss:0.0025 | acc:100.0% | val_loss:5.3916 | val_acc:88.8889% | lr:0.000078 | time: 18s101ms
+[2019-06-22 17:15:49,767][INFO]: LeNet | epoch:84/100 | tol_epoch:84 | loss:0.0026 | acc:100.0% | val_loss:5.3919 | val_acc:88.8889% | lr:0.000109 | time: 17s903ms
+[2019-06-22 17:16:07,664][INFO]: LeNet | epoch:85/100 | tol_epoch:85 | loss:0.0028 | acc:100.0% | val_loss:5.3926 | val_acc:88.8889% | lr:0.000150 | time: 17s895ms
+[2019-06-22 17:16:26,921][INFO]: LeNet | epoch:86/100 | tol_epoch:86 | loss:0.0029 | acc:100.0% | val_loss:5.3931 | val_acc:88.8889% | lr:0.000199 | time: 18s168ms
+[2019-06-22 17:16:44,796][INFO]: LeNet | epoch:87/100 | tol_epoch:87 | loss:0.0031 | acc:100.0% | val_loss:5.3933 | val_acc:88.8889% | lr:0.000255 | time: 17s873ms
+[2019-06-22 17:17:02,804][INFO]: LeNet | epoch:88/100 | tol_epoch:88 | loss:0.0033 | acc:100.0% | val_loss:5.3939 | val_acc:88.8889% | lr:0.000319 | time: 18s6ms
+[2019-06-22 17:17:20,670][INFO]: LeNet | epoch:89/100 | tol_epoch:89 | loss:0.0028 | acc:100.0% | val_loss:5.3962 | val_acc:88.8492% | lr:0.000390 | time: 17s866ms
+[2019-06-22 17:17:38,535][INFO]: LeNet | epoch:90/100 | tol_epoch:90 | loss:0.0032 | acc:100.0% | val_loss:5.3969 | val_acc:88.8889% | lr:0.000469 | time: 17s863ms
+[2019-06-22 17:17:57,581][INFO]: LeNet | epoch:91/100 | tol_epoch:91 | loss:0.0031 | acc:100.0% | val_loss:5.3983 | val_acc:88.8889% | lr:0.000554 | time: 17s991ms
+[2019-06-22 17:18:15,481][INFO]: LeNet | epoch:92/100 | tol_epoch:92 | loss:0.0027 | acc:100.0% | val_loss:5.4023 | val_acc:88.9683% | lr:0.000647 | time: 17s899ms
+[2019-06-22 17:18:33,378][INFO]: LeNet | epoch:93/100 | tol_epoch:93 | loss:0.0025 | acc:100.0% | val_loss:5.4063 | val_acc:89.0079% | lr:0.000746 | time: 17s895ms
+[2019-06-22 17:18:51,434][INFO]: LeNet | epoch:94/100 | tol_epoch:94 | loss:0.0024 | acc:100.0% | val_loss:5.4132 | val_acc:89.0079% | lr:0.000852 | time: 18s54ms
+[2019-06-22 17:19:09,474][INFO]: LeNet | epoch:95/100 | tol_epoch:95 | loss:0.0023 | acc:100.0% | val_loss:5.4181 | val_acc:88.9286% | lr:0.000964 | time: 18s38ms
+[2019-06-22 17:19:28,463][INFO]: LeNet | epoch:96/100 | tol_epoch:96 | loss:0.0023 | acc:100.0% | val_loss:5.4235 | val_acc:88.8889% | lr:0.001082 | time: 17s975ms
+[2019-06-22 17:19:46,493][INFO]: LeNet | epoch:97/100 | tol_epoch:97 | loss:0.0024 | acc:100.0% | val_loss:5.4336 | val_acc:88.9683% | lr:0.001207 | time: 18s28ms
+[2019-06-22 17:20:04,414][INFO]: LeNet | epoch:98/100 | tol_epoch:98 | loss:0.0029 | acc:100.0% | val_loss:5.4311 | val_acc:88.9683% | lr:0.001337 | time: 17s919ms
+[2019-06-22 17:20:22,368][INFO]: LeNet | epoch:99/100 | tol_epoch:99 | loss:0.0027 | acc:100.0% | val_loss:5.4307 | val_acc:89.0873% | lr:0.001473 | time: 17s952ms
+[2019-06-22 17:20:40,251][INFO]: LeNet | epoch:100/100 | tol_epoch:100 | loss:0.0021 | acc:100.0% | val_loss:5.4406 | val_acc:88.8889% | lr:0.001614 | time: 17s881ms

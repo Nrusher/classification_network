@@ -185,8 +185,23 @@ def convert_image(root,copy_dir,raw_fomat,dst_fomat):
                
         shutil.move(nf,nd)
 
+def get_imags_size(root,ans_dir,image_fomat):
+    image_size = []
+    images = filter_files(root,image_fomat)
+    for f in images:
+        img = Image.open(f)
+        image_size.append(img.size)
+    # image_size = np.array(image_size)
+    # image_size_unique = np.unique(image_size)
+    image_size_unique = list(set(image_size))
+    return image_size_unique
+
+def gennerate_file_name(args):
+    pass
+
 
 if __name__ == "__main__":
+    pass
     # key_words = '.ppm'
 
     # root = "../traffic/test"    
@@ -195,22 +210,8 @@ if __name__ == "__main__":
     # dst_fomat = '.jpeg'
 
     # convert_image(root,copy_dir,raw_fomat,dst_fomat)
-    files = filter_files("../traffic/train",'.csv')
-    for f in files:
-        os.remove(f)
-
-
-
-
-        
-        
-        
-
-    
-    
-
-
-
-    
-
-
+    # files = filter_files("../traffic/train",'.csv')
+    # for f in files:
+    #     os.remove(f)
+    # print(get_imags_size("../traffic/data/train",None,'.ppm'))
+    print('str %s' % (str((1,2))))
