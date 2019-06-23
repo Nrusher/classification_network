@@ -55,12 +55,15 @@
 **input_size = 64x64, batch_size = 16,初始学习率0.01情况下的网络实验对比图（图像已平滑）**
 
 验证集误差对比
+
 ![val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/val_loss.png)
 
 验证集准确率对比
+
 ![val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/val_acc.png)
 
 学习率变化曲线
+
 ![learn_rate](https://github.com/Nrusher/classification_network/blob/master/pic/learn_rate.png)
 
 最好模型准确率
