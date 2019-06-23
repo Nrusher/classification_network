@@ -22,10 +22,10 @@ import torchvision.models
 
 class Arg():
     def __init__(self,
-                 project_name='traffic_ResNet34_coslr_64x64_16_0.01',
+                 project_name='test',
                  class_num=62,
                  input_size=(64, 64),
-                 lr=0.01,
+                 lr=0.005,
                  epoch=100,
                  cuda='cuda',
                  train_root='../traffic/data/train',
@@ -33,7 +33,7 @@ class Arg():
                  val_root='../traffic/data/val',
                  val_batch_size=16,
                  load='make_model',
-                 model_type='ResNet34',
+                 model_type='VGG11',
                  model_save_dir='./model_save',
                  model_load_dir='./model_save/traffic_DesenNet_224x224_16.ckp.params.pth',
                  log_dir='./logs',
@@ -137,6 +137,8 @@ class Net(object):
 
         self.best_params = None
 
+        self.params_num = 0
+
     def _make_model(self):
         if self.model_type == 'LeNet':
             self.model = model.LeNet(self.input_size,self.class_num).to(self.device)
@@ -206,7 +208,14 @@ class Net(object):
                 self.model.parameters(), lr=self.lr, momentum=0.9)
             self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
                 self.optimizer,T_max = 60,last_epoch = -1)
-            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)             
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)   
+        elif self.model_type == 'AlexNet':
+            self.model = torchvision.models.AlexNet(num_classes = self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)            
 
     def load_model(self):
         if self.load == 'load_model':
@@ -222,7 +231,9 @@ class Net(object):
             print(self.total_epochs)
         elif self.load == 'make_model':
             self._make_model()
+        self.params_num = sum([param.nelement() for param in self.model.parameters()])/1e6
         print(self.model)
+        print("number of params:%2.fM"%self.params_num)
 
     def load_data(self):
         train_transform = transforms.Compose([transforms.Resize(self.input_size),
@@ -415,5 +426,6 @@ class Net(object):
 if __name__ == "__main__":
     args = Arg()
     net = Net(args)
-    net.run()
+    net.load_model()
+    # net.run()
     # net.load_data()

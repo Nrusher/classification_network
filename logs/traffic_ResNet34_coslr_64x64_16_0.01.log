@@ -1,0 +1,101 @@
+[2019-06-23 17:07:40,065][DEBUG]:  ResNet34 | train set size:286x16 | val set size:158x16 | input size:(64, 64) | class num:62 | lr: 0.010000
+[2019-06-23 17:08:07,272][INFO]: ResNet34 | epoch:1/100 | tol_epoch:1 | loss:13.1447 | acc: 48.9% | val_loss:4.9038 | val_acc:79.5238% | lr:0.009986 | time: 27s207ms
+[2019-06-23 17:08:32,951][INFO]: ResNet34 | epoch:2/100 | tol_epoch:2 | loss:4.4138 | acc: 79.6% | val_loss:2.8429 | val_acc:87.4206% | lr:0.009952 | time: 25s672ms
+[2019-06-23 17:08:57,667][INFO]: ResNet34 | epoch:3/100 | tol_epoch:3 | loss:2.8160 | acc: 86.8% | val_loss:2.1980 | val_acc:90.5556% | lr:0.009904 | time: 24s714ms
+[2019-06-23 17:09:22,452][INFO]: ResNet34 | epoch:4/100 | tol_epoch:4 | loss:1.5369 | acc: 92.5% | val_loss:1.6070 | val_acc:93.2540% | lr:0.009843 | time: 24s784ms
+[2019-06-23 17:09:47,270][INFO]: ResNet34 | epoch:5/100 | tol_epoch:5 | loss:1.0126 | acc: 94.8% | val_loss:2.7035 | val_acc:90.0794% | lr:0.009769 | time: 24s816ms
+[2019-06-23 17:10:12,409][INFO]: ResNet34 | epoch:6/100 | tol_epoch:6 | loss:0.7229 | acc: 96.5% | val_loss:1.9419 | val_acc:92.6984% | lr:0.009681 | time: 24s869ms
+[2019-06-23 17:10:37,148][INFO]: ResNet34 | epoch:7/100 | tol_epoch:7 | loss:0.6242 | acc: 96.9% | val_loss:1.5623 | val_acc:94.5635% | lr:0.009581 | time: 24s736ms
+[2019-06-23 17:11:01,940][INFO]: ResNet34 | epoch:8/100 | tol_epoch:8 | loss:0.4326 | acc: 98.1% | val_loss:2.3377 | val_acc:91.4286% | lr:0.009469 | time: 24s791ms
+[2019-06-23 17:11:26,684][INFO]: ResNet34 | epoch:9/100 | tol_epoch:9 | loss:0.2798 | acc: 98.7% | val_loss:1.6892 | val_acc:95.1587% | lr:0.009344 | time: 24s740ms
+[2019-06-23 17:11:51,409][INFO]: ResNet34 | epoch:10/100 | tol_epoch:10 | loss:0.2535 | acc: 98.8% | val_loss:2.0508 | val_acc:93.0159% | lr:0.009207 | time: 24s724ms
+[2019-06-23 17:12:16,354][INFO]: ResNet34 | epoch:11/100 | tol_epoch:11 | loss:0.1358 | acc: 99.4% | val_loss:1.6135 | val_acc:94.5238% | lr:0.009059 | time: 24s651ms
+[2019-06-23 17:12:41,130][INFO]: ResNet34 | epoch:12/100 | tol_epoch:12 | loss:0.2910 | acc: 98.8% | val_loss:1.8708 | val_acc:93.9286% | lr:0.008899 | time: 24s767ms
+[2019-06-23 17:13:06,144][INFO]: ResNet34 | epoch:13/100 | tol_epoch:13 | loss:0.1206 | acc: 99.5% | val_loss:1.7768 | val_acc:93.6508% | lr:0.008729 | time: 25s10ms
+[2019-06-23 17:13:31,189][INFO]: ResNet34 | epoch:14/100 | tol_epoch:14 | loss:0.0256 | acc: 99.9% | val_loss:1.5560 | val_acc:95.1190% | lr:0.008549 | time: 25s44ms
+[2019-06-23 17:13:56,197][INFO]: ResNet34 | epoch:15/100 | tol_epoch:15 | loss:0.0161 | acc:100.0% | val_loss:1.5504 | val_acc:95.6746% | lr:0.008359 | time: 25s7ms
+[2019-06-23 17:14:21,651][INFO]: ResNet34 | epoch:16/100 | tol_epoch:16 | loss:0.0256 | acc: 99.9% | val_loss:1.8063 | val_acc:94.9603% | lr:0.008160 | time: 25s151ms
+[2019-06-23 17:14:46,648][INFO]: ResNet34 | epoch:17/100 | tol_epoch:17 | loss:0.0118 | acc:100.0% | val_loss:1.8163 | val_acc:95.0794% | lr:0.007952 | time: 24s996ms
+[2019-06-23 17:15:11,703][INFO]: ResNet34 | epoch:18/100 | tol_epoch:18 | loss:0.0355 | acc: 99.9% | val_loss:1.9499 | val_acc:93.5714% | lr:0.007737 | time: 25s54ms
+[2019-06-23 17:15:36,636][INFO]: ResNet34 | epoch:19/100 | tol_epoch:19 | loss:0.1246 | acc: 99.5% | val_loss:1.4495 | val_acc:95.4365% | lr:0.007513 | time: 24s932ms
+[2019-06-23 17:16:01,585][INFO]: ResNet34 | epoch:20/100 | tol_epoch:20 | loss:0.0235 | acc: 99.9% | val_loss:1.4326 | val_acc:95.5556% | lr:0.007283 | time: 24s947ms
+[2019-06-23 17:16:26,970][INFO]: ResNet34 | epoch:21/100 | tol_epoch:21 | loss:0.0625 | acc: 99.7% | val_loss:1.5103 | val_acc:95.7540% | lr:0.007047 | time: 25s86ms
+[2019-06-23 17:16:51,996][INFO]: ResNet34 | epoch:22/100 | tol_epoch:22 | loss:0.0107 | acc:100.0% | val_loss:1.5614 | val_acc:95.5952% | lr:0.006805 | time: 25s25ms
+[2019-06-23 17:17:17,063][INFO]: ResNet34 | epoch:23/100 | tol_epoch:23 | loss:0.0115 | acc: 99.9% | val_loss:1.5739 | val_acc:95.5556% | lr:0.006558 | time: 25s65ms
+[2019-06-23 17:17:42,143][INFO]: ResNet34 | epoch:24/100 | tol_epoch:24 | loss:0.0086 | acc:100.0% | val_loss:1.6322 | val_acc:95.3968% | lr:0.006307 | time: 25s78ms
+[2019-06-23 17:18:07,200][INFO]: ResNet34 | epoch:25/100 | tol_epoch:25 | loss:0.0056 | acc:100.0% | val_loss:1.5937 | val_acc:95.4365% | lr:0.006053 | time: 25s55ms
+[2019-06-23 17:18:32,580][INFO]: ResNet34 | epoch:26/100 | tol_epoch:26 | loss:0.0041 | acc:100.0% | val_loss:1.5257 | val_acc:95.6746% | lr:0.005795 | time: 25s77ms
+[2019-06-23 17:18:57,386][INFO]: ResNet34 | epoch:27/100 | tol_epoch:27 | loss:0.0030 | acc:100.0% | val_loss:1.5954 | val_acc:95.5556% | lr:0.005536 | time: 24s804ms
+[2019-06-23 17:19:22,320][INFO]: ResNet34 | epoch:28/100 | tol_epoch:28 | loss:0.0041 | acc:100.0% | val_loss:1.6202 | val_acc:95.3968% | lr:0.005275 | time: 24s933ms
+[2019-06-23 17:19:47,303][INFO]: ResNet34 | epoch:29/100 | tol_epoch:29 | loss:0.0026 | acc:100.0% | val_loss:1.4647 | val_acc:95.8730% | lr:0.005013 | time: 24s980ms
+[2019-06-23 17:20:12,183][INFO]: ResNet34 | epoch:30/100 | tol_epoch:30 | loss:0.0023 | acc:100.0% | val_loss:1.4517 | val_acc:95.9524% | lr:0.004751 | time: 24s879ms
+[2019-06-23 17:20:37,380][INFO]: ResNet34 | epoch:31/100 | tol_epoch:31 | loss:0.0021 | acc:100.0% | val_loss:1.4991 | val_acc:95.7937% | lr:0.004490 | time: 24s897ms
+[2019-06-23 17:21:02,268][INFO]: ResNet34 | epoch:32/100 | tol_epoch:32 | loss:0.0015 | acc:100.0% | val_loss:1.4559 | val_acc:95.9524% | lr:0.004231 | time: 24s887ms
+[2019-06-23 17:21:27,157][INFO]: ResNet34 | epoch:33/100 | tol_epoch:33 | loss:0.0026 | acc:100.0% | val_loss:1.4548 | val_acc:96.1508% | lr:0.003973 | time: 24s887ms
+[2019-06-23 17:21:52,104][INFO]: ResNet34 | epoch:34/100 | tol_epoch:34 | loss:0.0010 | acc:100.0% | val_loss:1.5108 | val_acc:95.9524% | lr:0.003719 | time: 24s946ms
+[2019-06-23 17:22:16,924][INFO]: ResNet34 | epoch:35/100 | tol_epoch:35 | loss:0.0017 | acc:100.0% | val_loss:1.4939 | val_acc:96.1111% | lr:0.003468 | time: 24s818ms
+[2019-06-23 17:22:42,157][INFO]: ResNet34 | epoch:36/100 | tol_epoch:36 | loss:0.0014 | acc:100.0% | val_loss:1.4983 | val_acc:96.1905% | lr:0.003221 | time: 24s931ms
+[2019-06-23 17:23:07,163][INFO]: ResNet34 | epoch:37/100 | tol_epoch:37 | loss:0.0014 | acc:100.0% | val_loss:1.5043 | val_acc:96.1111% | lr:0.002979 | time: 25s5ms
+[2019-06-23 17:23:32,169][INFO]: ResNet34 | epoch:38/100 | tol_epoch:38 | loss:0.0010 | acc:100.0% | val_loss:1.5193 | val_acc:95.8730% | lr:0.002743 | time: 25s4ms
+[2019-06-23 17:23:57,185][INFO]: ResNet34 | epoch:39/100 | tol_epoch:39 | loss:0.0010 | acc:100.0% | val_loss:1.5828 | val_acc:95.5952% | lr:0.002513 | time: 25s14ms
+[2019-06-23 17:24:22,107][INFO]: ResNet34 | epoch:40/100 | tol_epoch:40 | loss:0.0016 | acc:100.0% | val_loss:1.5380 | val_acc:96.0317% | lr:0.002289 | time: 24s921ms
+[2019-06-23 17:24:47,218][INFO]: ResNet34 | epoch:41/100 | tol_epoch:41 | loss:0.0011 | acc:100.0% | val_loss:1.5233 | val_acc:95.7540% | lr:0.002074 | time: 24s816ms
+[2019-06-23 17:25:12,104][INFO]: ResNet34 | epoch:42/100 | tol_epoch:42 | loss:0.0010 | acc:100.0% | val_loss:1.4594 | val_acc:96.3492% | lr:0.001866 | time: 24s885ms
+[2019-06-23 17:25:37,185][INFO]: ResNet34 | epoch:43/100 | tol_epoch:43 | loss:0.0009 | acc:100.0% | val_loss:1.5433 | val_acc:95.7937% | lr:0.001667 | time: 25s79ms
+[2019-06-23 17:26:02,072][INFO]: ResNet34 | epoch:44/100 | tol_epoch:44 | loss:0.0046 | acc:100.0% | val_loss:1.4912 | val_acc:95.9524% | lr:0.001477 | time: 24s885ms
+[2019-06-23 17:26:26,862][INFO]: ResNet34 | epoch:45/100 | tol_epoch:45 | loss:0.0019 | acc:100.0% | val_loss:1.5476 | val_acc:95.7540% | lr:0.001296 | time: 24s789ms
+[2019-06-23 17:26:52,083][INFO]: ResNet34 | epoch:46/100 | tol_epoch:46 | loss:0.0019 | acc:100.0% | val_loss:1.5500 | val_acc:95.8333% | lr:0.001126 | time: 24s916ms
+[2019-06-23 17:27:17,037][INFO]: ResNet34 | epoch:47/100 | tol_epoch:47 | loss:0.0010 | acc:100.0% | val_loss:1.5069 | val_acc:96.0714% | lr:0.000967 | time: 24s952ms
+[2019-06-23 17:27:41,966][INFO]: ResNet34 | epoch:48/100 | tol_epoch:48 | loss:0.0010 | acc:100.0% | val_loss:1.5822 | val_acc:95.4762% | lr:0.000818 | time: 24s928ms
+[2019-06-23 17:28:06,897][INFO]: ResNet34 | epoch:49/100 | tol_epoch:49 | loss:0.0008 | acc:100.0% | val_loss:1.6046 | val_acc:95.7143% | lr:0.000681 | time: 24s930ms
+[2019-06-23 17:28:31,829][INFO]: ResNet34 | epoch:50/100 | tol_epoch:50 | loss:0.0013 | acc:100.0% | val_loss:1.5135 | val_acc:95.9524% | lr:0.000556 | time: 24s930ms
+[2019-06-23 17:28:56,791][INFO]: ResNet34 | epoch:51/100 | tol_epoch:51 | loss:0.0008 | acc:100.0% | val_loss:1.5696 | val_acc:95.7143% | lr:0.000443 | time: 24s659ms
+[2019-06-23 17:29:21,447][INFO]: ResNet34 | epoch:52/100 | tol_epoch:52 | loss:0.0010 | acc:100.0% | val_loss:1.5417 | val_acc:95.7937% | lr:0.000343 | time: 24s655ms
+[2019-06-23 17:29:46,199][INFO]: ResNet34 | epoch:53/100 | tol_epoch:53 | loss:0.0009 | acc:100.0% | val_loss:1.5231 | val_acc:95.9524% | lr:0.000255 | time: 24s751ms
+[2019-06-23 17:30:10,881][INFO]: ResNet34 | epoch:54/100 | tol_epoch:54 | loss:0.0009 | acc:100.0% | val_loss:1.5758 | val_acc:95.7937% | lr:0.000180 | time: 24s681ms
+[2019-06-23 17:30:35,500][INFO]: ResNet34 | epoch:55/100 | tol_epoch:55 | loss:0.0012 | acc:100.0% | val_loss:1.5994 | val_acc:95.5952% | lr:0.000119 | time: 24s617ms
+[2019-06-23 17:31:00,351][INFO]: ResNet34 | epoch:56/100 | tol_epoch:56 | loss:0.0008 | acc:100.0% | val_loss:1.5850 | val_acc:95.5556% | lr:0.000070 | time: 24s553ms
+[2019-06-23 17:31:25,018][INFO]: ResNet34 | epoch:57/100 | tol_epoch:57 | loss:0.0008 | acc:100.0% | val_loss:1.5261 | val_acc:95.8730% | lr:0.000035 | time: 24s665ms
+[2019-06-23 17:31:49,660][INFO]: ResNet34 | epoch:58/100 | tol_epoch:58 | loss:0.0014 | acc:100.0% | val_loss:1.5347 | val_acc:95.7540% | lr:0.000012 | time: 24s640ms
+[2019-06-23 17:32:14,237][INFO]: ResNet34 | epoch:59/100 | tol_epoch:59 | loss:0.0010 | acc:100.0% | val_loss:1.5726 | val_acc:95.8730% | lr:0.000002 | time: 24s576ms
+[2019-06-23 17:32:38,908][INFO]: ResNet34 | epoch:60/100 | tol_epoch:60 | loss:0.0020 | acc:100.0% | val_loss:1.5481 | val_acc:95.8730% | lr:0.000000 | time: 24s668ms
+[2019-06-23 17:33:03,782][INFO]: ResNet34 | epoch:61/100 | tol_epoch:61 | loss:0.0013 | acc:100.0% | val_loss:1.5746 | val_acc:95.5556% | lr:0.000014 | time: 24s590ms
+[2019-06-23 17:33:29,001][INFO]: ResNet34 | epoch:62/100 | tol_epoch:62 | loss:0.0009 | acc:100.0% | val_loss:1.5453 | val_acc:95.5952% | lr:0.000109 | time: 25s218ms
+[2019-06-23 17:33:53,755][INFO]: ResNet34 | epoch:63/100 | tol_epoch:63 | loss:0.0012 | acc:100.0% | val_loss:1.6033 | val_acc:95.6746% | lr:0.000138 | time: 24s753ms
+[2019-06-23 17:34:18,705][INFO]: ResNet34 | epoch:64/100 | tol_epoch:64 | loss:0.0020 | acc:100.0% | val_loss:1.5682 | val_acc:95.7143% | lr:0.000194 | time: 24s948ms
+[2019-06-23 17:34:43,984][INFO]: ResNet34 | epoch:65/100 | tol_epoch:65 | loss:0.0009 | acc:100.0% | val_loss:1.5301 | val_acc:95.9524% | lr:0.000266 | time: 25s277ms
+[2019-06-23 17:35:09,233][INFO]: ResNet34 | epoch:66/100 | tol_epoch:66 | loss:0.0009 | acc:100.0% | val_loss:1.5269 | val_acc:95.7937% | lr:0.000352 | time: 24s940ms
+[2019-06-23 17:35:33,957][INFO]: ResNet34 | epoch:67/100 | tol_epoch:67 | loss:0.0014 | acc:100.0% | val_loss:1.5401 | val_acc:95.7540% | lr:0.000451 | time: 24s723ms
+[2019-06-23 17:35:58,699][INFO]: ResNet34 | epoch:68/100 | tol_epoch:68 | loss:0.0015 | acc:100.0% | val_loss:1.5674 | val_acc:95.8333% | lr:0.000563 | time: 24s740ms
+[2019-06-23 17:36:23,514][INFO]: ResNet34 | epoch:69/100 | tol_epoch:69 | loss:0.0010 | acc:100.0% | val_loss:1.5360 | val_acc:95.8730% | lr:0.000687 | time: 24s813ms
+[2019-06-23 17:36:48,204][INFO]: ResNet34 | epoch:70/100 | tol_epoch:70 | loss:0.0010 | acc:100.0% | val_loss:1.5440 | val_acc:95.7937% | lr:0.000823 | time: 24s688ms
+[2019-06-23 17:37:13,285][INFO]: ResNet34 | epoch:71/100 | tol_epoch:71 | loss:0.0010 | acc:100.0% | val_loss:1.5250 | val_acc:95.9524% | lr:0.000971 | time: 24s781ms
+[2019-06-23 17:37:38,026][INFO]: ResNet34 | epoch:72/100 | tol_epoch:72 | loss:0.0008 | acc:100.0% | val_loss:1.5550 | val_acc:95.8333% | lr:0.001130 | time: 24s740ms
+[2019-06-23 17:38:02,849][INFO]: ResNet34 | epoch:73/100 | tol_epoch:73 | loss:0.0009 | acc:100.0% | val_loss:1.5502 | val_acc:95.9127% | lr:0.001300 | time: 24s821ms
+[2019-06-23 17:38:27,588][INFO]: ResNet34 | epoch:74/100 | tol_epoch:74 | loss:0.0008 | acc:100.0% | val_loss:1.5390 | val_acc:95.8730% | lr:0.001480 | time: 24s737ms
+[2019-06-23 17:38:52,466][INFO]: ResNet34 | epoch:75/100 | tol_epoch:75 | loss:0.0031 | acc:100.0% | val_loss:1.6840 | val_acc:95.2381% | lr:0.001670 | time: 24s877ms
+[2019-06-23 17:39:17,602][INFO]: ResNet34 | epoch:76/100 | tol_epoch:76 | loss:0.0011 | acc:100.0% | val_loss:1.5907 | val_acc:95.7540% | lr:0.001869 | time: 24s842ms
+[2019-06-23 17:39:42,374][INFO]: ResNet34 | epoch:77/100 | tol_epoch:77 | loss:0.0009 | acc:100.0% | val_loss:1.6556 | val_acc:95.6349% | lr:0.002076 | time: 24s770ms
+[2019-06-23 17:40:07,128][INFO]: ResNet34 | epoch:78/100 | tol_epoch:78 | loss:0.0014 | acc:100.0% | val_loss:1.6421 | val_acc:95.3968% | lr:0.002292 | time: 24s753ms
+[2019-06-23 17:40:31,963][INFO]: ResNet34 | epoch:79/100 | tol_epoch:79 | loss:0.0008 | acc:100.0% | val_loss:1.5857 | val_acc:95.5556% | lr:0.002515 | time: 24s833ms
+[2019-06-23 17:40:57,203][INFO]: ResNet34 | epoch:80/100 | tol_epoch:80 | loss:0.0008 | acc:100.0% | val_loss:1.5733 | val_acc:95.6746% | lr:0.002745 | time: 25s238ms
+[2019-06-23 17:41:22,346][INFO]: ResNet34 | epoch:81/100 | tol_epoch:81 | loss:0.0011 | acc:100.0% | val_loss:1.6329 | val_acc:95.5159% | lr:0.002981 | time: 24s825ms
+[2019-06-23 17:41:47,215][INFO]: ResNet34 | epoch:82/100 | tol_epoch:82 | loss:0.0017 | acc:100.0% | val_loss:1.5850 | val_acc:95.7143% | lr:0.003223 | time: 24s868ms
+[2019-06-23 17:42:11,997][INFO]: ResNet34 | epoch:83/100 | tol_epoch:83 | loss:0.0011 | acc:100.0% | val_loss:1.5706 | val_acc:95.7540% | lr:0.003470 | time: 24s780ms
+[2019-06-23 17:42:36,736][INFO]: ResNet34 | epoch:84/100 | tol_epoch:84 | loss:0.0007 | acc:100.0% | val_loss:1.5974 | val_acc:95.7540% | lr:0.003721 | time: 24s738ms
+[2019-06-23 17:43:01,516][INFO]: ResNet34 | epoch:85/100 | tol_epoch:85 | loss:0.0010 | acc:100.0% | val_loss:1.6213 | val_acc:95.8333% | lr:0.003975 | time: 24s778ms
+[2019-06-23 17:43:26,544][INFO]: ResNet34 | epoch:86/100 | tol_epoch:86 | loss:0.0008 | acc:100.0% | val_loss:1.5358 | val_acc:95.7143% | lr:0.004232 | time: 24s736ms
+[2019-06-23 17:43:51,425][INFO]: ResNet34 | epoch:87/100 | tol_epoch:87 | loss:0.0007 | acc:100.0% | val_loss:1.6195 | val_acc:95.9921% | lr:0.004492 | time: 24s879ms
+[2019-06-23 17:44:16,194][INFO]: ResNet34 | epoch:88/100 | tol_epoch:88 | loss:0.0008 | acc:100.0% | val_loss:1.5680 | val_acc:96.1111% | lr:0.004753 | time: 24s767ms
+[2019-06-23 17:44:40,930][INFO]: ResNet34 | epoch:89/100 | tol_epoch:89 | loss:0.0007 | acc:100.0% | val_loss:1.5667 | val_acc:96.0317% | lr:0.005014 | time: 24s735ms
+[2019-06-23 17:45:05,694][INFO]: ResNet34 | epoch:90/100 | tol_epoch:90 | loss:0.0007 | acc:100.0% | val_loss:1.5874 | val_acc:95.6349% | lr:0.005276 | time: 24s760ms
+[2019-06-23 17:45:30,763][INFO]: ResNet34 | epoch:91/100 | tol_epoch:91 | loss:0.0009 | acc:100.0% | val_loss:1.6272 | val_acc:95.5952% | lr:0.005537 | time: 24s770ms
+[2019-06-23 17:45:55,574][INFO]: ResNet34 | epoch:92/100 | tol_epoch:92 | loss:0.0006 | acc:100.0% | val_loss:1.5748 | val_acc:95.9921% | lr:0.005797 | time: 24s810ms
+[2019-06-23 17:46:20,278][INFO]: ResNet34 | epoch:93/100 | tol_epoch:93 | loss:0.0007 | acc:100.0% | val_loss:1.5951 | val_acc:95.9127% | lr:0.006054 | time: 24s702ms
+[2019-06-23 17:46:44,966][INFO]: ResNet34 | epoch:94/100 | tol_epoch:94 | loss:0.0009 | acc:100.0% | val_loss:1.5651 | val_acc:96.0714% | lr:0.006308 | time: 24s685ms
+[2019-06-23 17:47:09,756][INFO]: ResNet34 | epoch:95/100 | tol_epoch:95 | loss:0.0006 | acc:100.0% | val_loss:1.6176 | val_acc:95.9921% | lr:0.006559 | time: 24s783ms
+[2019-06-23 17:47:34,821][INFO]: ResNet34 | epoch:96/100 | tol_epoch:96 | loss:0.0009 | acc:100.0% | val_loss:1.5680 | val_acc:95.7143% | lr:0.006806 | time: 24s758ms
+[2019-06-23 17:47:59,666][INFO]: ResNet34 | epoch:97/100 | tol_epoch:97 | loss:0.0015 | acc:100.0% | val_loss:1.6624 | val_acc:95.5159% | lr:0.007048 | time: 24s843ms
+[2019-06-23 17:48:24,511][INFO]: ResNet34 | epoch:98/100 | tol_epoch:98 | loss:0.0007 | acc:100.0% | val_loss:1.5514 | val_acc:96.0317% | lr:0.007284 | time: 24s844ms
+[2019-06-23 17:48:49,292][INFO]: ResNet34 | epoch:99/100 | tol_epoch:99 | loss:0.0006 | acc:100.0% | val_loss:1.5427 | val_acc:96.2698% | lr:0.007514 | time: 24s776ms
+[2019-06-23 17:49:14,095][INFO]: ResNet34 | epoch:100/100 | tol_epoch:100 | loss:0.0005 | acc:100.0% | val_loss:1.5948 | val_acc:96.1111% | lr:0.007737 | time: 24s802ms
