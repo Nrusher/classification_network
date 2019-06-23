@@ -17,3 +17,5 @@
 [2019-06-23 14:25:02,936][INFO]: VGG11bn | epoch:16/100 | tol_epoch:16 | loss:2.6343 | acc: 87.1% | val_loss:2.4814 | val_acc:88.6905% | lr:0.008160 | time: 21s385ms
 [2019-06-23 14:25:24,150][INFO]: VGG11bn | epoch:17/100 | tol_epoch:17 | loss:1.8724 | acc: 90.5% | val_loss:2.7355 | val_acc:89.1667% | lr:0.007952 | time: 21s213ms
 [2019-06-23 14:25:45,397][INFO]: VGG11bn | epoch:18/100 | tol_epoch:18 | loss:1.5360 | acc: 92.0% | val_loss:2.1541 | val_acc:90.7540% | lr:0.007737 | time: 21s245ms
+[2019-06-23 14:26:06,886][INFO]: VGG11bn | epoch:19/100 | tol_epoch:19 | loss:1.4724 | acc: 93.0% | val_loss:2.2144 | val_acc:89.4444% | lr:0.007513 | time: 21s487ms
+[2019-06-23 14:26:28,392][INFO]: VGG11bn | epoch:20/100 | tol_epoch:20 | loss:1.0132 | acc: 94.6% | val_loss:1.8859 | val_acc:92.8175% | lr:0.007283 | time: 21s503ms
