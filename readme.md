@@ -40,19 +40,19 @@
 |traffic_VGG11_coslr_64x64_16_0.01|129M|yes|
 |traffic_Alexnet_coslr_64x64_16_0.005.log|57M|yes|
 
-输入图片尺寸影响
+输入图片尺寸影响（图像已平滑）
 
 ![input_size_val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/input_size_val_loss.png)
 
 ![input_size_val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/input_size_val_acc.png)
 
-训练batch大小影响
+训练batch大小影响（图像已平滑）
 
 ![batch_size_val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/batch_size_val_loss.png)
 
 ![batch_size_val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/batch_size_val_acc.png)
 
-**input_size = 64x64, batch_size = 16,初始学习率0.01情况下的网络实验对比图**
+**input_size = 64x64, batch_size = 16,初始学习率0.01情况下的网络实验对比图（图像已平滑）**
 
 验证集误差对比
 ![val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/val_loss.png)
