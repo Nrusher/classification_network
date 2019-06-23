@@ -22,7 +22,7 @@ import torchvision.models
 
 class Arg():
     def __init__(self,
-                 project_name='traffic_VGG19bn_coslr_64x64_16_0.01',
+                 project_name='traffic_ResNet34_coslr_64x64_16_0.01',
                  class_num=62,
                  input_size=(64, 64),
                  lr=0.01,
@@ -33,7 +33,7 @@ class Arg():
                  val_root='../traffic/data/val',
                  val_batch_size=16,
                  load='make_model',
-                 model_type='VGG19bn',
+                 model_type='ResNet34',
                  model_save_dir='./model_save',
                  model_load_dir='./model_save/traffic_DesenNet_224x224_16.ckp.params.pth',
                  log_dir='./logs',
@@ -155,7 +155,15 @@ class Net(object):
             self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
                 self.optimizer,T_max = 60,last_epoch = -1)
             self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
-        
+
+        elif self.model_type == 'ResNet34':
+            self.model =  torchvision.models.ResNet(torchvision.models.resnet.BasicBlock,[3, 4, 6, 3],self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)   
+
         elif self.model_type == 'EfficientNetb0':
             self.model = EfficientNet.from_name('efficientnet-b0').to(self.device)
             self.optimizer = optim.SGD(
@@ -180,7 +188,25 @@ class Net(object):
                 self.model.parameters(), lr=self.lr, momentum=0.9)
             self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
                 self.optimizer,T_max = 60,last_epoch = -1)
-            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)           
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device) 
+        elif self.model_type == 'VGG11':
+            cfg =  [64, 'M', 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M']
+            features = torchvision.models.vgg.make_layers(cfg,batch_norm = False)
+            self.model = torchvision.models.VGG(features = features,num_classes=self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
+        elif self.model_type == 'VGG11bn':
+            cfg =  [64, 'M', 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M']
+            features = torchvision.models.vgg.make_layers(cfg,batch_norm = True)
+            self.model = torchvision.models.VGG(features = features,num_classes=self.class_num).to(self.device)
+            self.optimizer = optim.SGD(
+                self.model.parameters(), lr=self.lr, momentum=0.9)
+            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+                self.optimizer,T_max = 60,last_epoch = -1)
+            self.criterion = torch.nn.CrossEntropyLoss().to(self.device)             
 
     def load_model(self):
         if self.load == 'load_model':
