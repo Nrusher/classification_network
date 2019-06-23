@@ -40,15 +40,28 @@
 |traffic_VGG11_coslr_64x64_16_0.01|129M|yes|
 |traffic_Alexnet_coslr_64x64_16_0.005.log|57M|yes|
 
-
 输入图片尺寸影响
+
+![input_size_val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/input_size_val_loss.png)
+
+![input_size_val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/input_size_val_acc.png)
 
 训练batch大小影响
 
+![batch_size_val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/batch_size_val_loss.png)
+
+![batch_size_val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/batch_size_val_acc.png)
+
 **input_size = 64x64, batch_size = 16,初始学习率0.01情况下的网络实验对比图**
+
 验证集误差对比
+![val_loss](https://github.com/Nrusher/classification_network/blob/master/pic/val_loss.png)
 
 验证集准确率对比
+![val_acc](https://github.com/Nrusher/classification_network/blob/master/pic/val_acc.png)
+
+学习率变化曲线
+![learn_rate](https://github.com/Nrusher/classification_network/blob/master/pic/learn_rate.png)
 
 最好模型准确率
 
@@ -61,7 +74,7 @@
 |LeNet|95.9%|1M|
 |AlexNet|95.4%|57M|
 
-学习率变化曲线
+
 
 
 
