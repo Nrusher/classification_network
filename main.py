@@ -7,7 +7,8 @@ from torchvision import transforms, datasets
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-import logging
+import tensorboardX
+import pandas as pd
 
 import model
 import utils
@@ -25,7 +26,7 @@ class Arg():
                  project_name='test',
                  class_num=62,
                  input_size=(64, 64),
-                 lr=0.005,
+                 lr=0.01,
                  epoch=100,
                  cuda='cuda',
                  train_root='../traffic/data/train',
@@ -33,7 +34,7 @@ class Arg():
                  val_root='../traffic/data/val',
                  val_batch_size=16,
                  load='make_model',
-                 model_type='VGG11',
+                 model_type='ResNet18',
                  model_save_dir='./model_save',
                  model_load_dir='./model_save/traffic_DesenNet_224x224_16.ckp.params.pth',
                  log_dir='./logs',
@@ -41,7 +42,7 @@ class Arg():
                  checkpoint_per_epoch=5,
                  using_tensorboardx=True,
                  tensorboardx_file='./logs',
-                 verbose=1
+                 verbose=0
                  ):
         self.project_name = project_name
         self.class_num = class_num
@@ -236,8 +237,11 @@ class Net(object):
         print("number of params:%2.fM"%self.params_num)
 
     def load_data(self):
+
         train_transform = transforms.Compose([transforms.Resize(self.input_size),
+                                              transforms.RandomVerticalFlip(),
                                               transforms.RandomHorizontalFlip(),
+                                              transforms.RandomRotation((-1,45)),
                                               transforms.ToTensor(),
                                               transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                                                    std=[0.229, 0.224, 0.225])])
@@ -426,6 +430,5 @@ class Net(object):
 if __name__ == "__main__":
     args = Arg()
     net = Net(args)
-    net.load_model()
-    # net.run()
+    net.run()
     # net.load_data()

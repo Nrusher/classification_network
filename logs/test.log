@@ -1,0 +1,2 @@
+[2019-07-10 14:18:10,190][DEBUG]:  ResNet18 | train set size:286x16 | val set size:158x16 | input size:(64, 64) | class num:62 | lr: 0.010000
+[2019-07-10 14:18:31,647][INFO]: ResNet18 | epoch:1/100 | tol_epoch:1 | loss:11.9437 | acc: 52.4% | val_loss:8.9354 | val_acc:64.2460% | lr:0.009986 | time: 21s457ms

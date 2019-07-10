@@ -335,7 +335,30 @@ def transform_log_to_pd_dataframe(log_dir):
     table.dropna(how='all',inplace=True)
     return table
 
+def class_count(root):
+    class_floder = os.listdir(root)
+    print(class_floder)
+    
+    init_data = np.ones((len(class_floder),))*np.nan
+
+    for i in range(len(class_floder)):
+        path = os.path.join(root,class_floder[i])
+        init_data[i] = len(os.listdir(path))
+
+    init_dict = {"class_name": class_floder,
+                 "num": init_data}
+    table = pd.DataFrame(init_dict)
+    return table
+        
+
 if __name__ == "__main__":
+    data = class_count("../traffic/data/val")
+    print(data.num.values)
+    # data.plot(x = "class_name",y = "num",kind = 'bar')
+    # plt.show()
+
+    
+
     pass
     # key_words = '.ppm'
 
