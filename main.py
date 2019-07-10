@@ -403,9 +403,7 @@ class Net(object):
                    self.model_save_dir + '.best.ckp.params.pth')
 
     def imshow(self):
-        # Get a batch of training data
         inputs, classes = next(iter(self.train_loader))
-        # Make a grid from batch
         inp = torchvision.utils.make_grid(inputs)
 
         inp = inp.numpy().transpose((1, 2, 0))
@@ -414,8 +412,6 @@ class Net(object):
         inp = std * inp + mean
         inp = np.clip(inp, 0, 1)
         plt.imshow(inp)
-        # if title is not None:
-        #     plt.title(title)
         plt.pause(0.001)
         input()
 

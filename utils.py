@@ -13,7 +13,7 @@ import re
 from PIL import Image
 import matplotlib.pyplot as plt
 
-
+# 分割图片数据集
 def split_data(root, copy_dir, val_rate=0.3, test_rate=0.1):
 
     check = input("are you sure to split dataset? y/n\r\n")
@@ -66,7 +66,7 @@ TOTAL_BAR_LENGTH = 80
 LAST_T = time.time()
 BEGIN_T = LAST_T
 
-
+# 进度条
 def progress_bar(current, total, msg=None):
     global LAST_T, BEGIN_T
     if current == 0:
@@ -97,7 +97,7 @@ def progress_bar(current, total, msg=None):
         sys.stdout.write('\n')
     sys.stdout.flush()
 
-
+# 时间格式转换
 def format_time(seconds):
     days = int(seconds / 3600/24)
     seconds = seconds - days*3600*24
@@ -130,7 +130,7 @@ def format_time(seconds):
         f = '0ms'
     return f
 
-
+# 创建log
 def creat_logger(log_file, tty=True):
     # 创建log
     logger = logging.getLogger('logger')
@@ -156,7 +156,7 @@ def creat_logger(log_file, tty=True):
 
     return logger
 
-
+# 过滤文件
 def filter_files(root, key_words):
     files_find = []
     tree = list(os.walk(root))  # 列出文件夹下所有的目录与文件
@@ -176,7 +176,7 @@ def filter_files(root, key_words):
     print()
     return files_find
 
-
+# 转换图片格式
 def convert_image(root, copy_dir, raw_fomat, dst_fomat):
     if os.path.exists(copy_dir):
         shutil.rmtree(copy_dir)
@@ -196,7 +196,7 @@ def convert_image(root, copy_dir, raw_fomat, dst_fomat):
 
         shutil.move(nf, nd)
 
-
+# 获取图片大小
 def get_imags_size(root, ans_dir, image_fomat):
     image_size = []
     images = filter_files(root, image_fomat)
@@ -208,10 +208,7 @@ def get_imags_size(root, ans_dir, image_fomat):
     image_size_unique = list(set(image_size))
     return image_size_unique
 
-
-def gennerate_file_name(args):
-    pass
-
+# 把日志转化为csv文件
 def transform_log_to_pd_dataframe(log_dir):
     f = open(log_dir)
     log = f.readlines()
@@ -335,6 +332,7 @@ def transform_log_to_pd_dataframe(log_dir):
     table.dropna(how='all',inplace=True)
     return table
 
+# 计算类别数目
 def class_count(root):
     class_floder = os.listdir(root)
     print(class_floder)

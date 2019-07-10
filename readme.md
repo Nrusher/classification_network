@@ -62,6 +62,7 @@ CUDA版本：CUDA:10.0
 - 以及常用库
 
 **运行方法**
+
 在main.c文件中修改以下类的默认参数，配置实验使用的网络及其参数（请确保数据已按目录分割好）
 ```python
 class Arg():
@@ -88,6 +89,8 @@ class Arg():
                  verbose=1 # 打印方式，1或0
                  ):
 ```
+
+数据集下载地址：<https://btsd.ethz.ch/shareddata/>
 
 ## 4.实验列表及结果
 
