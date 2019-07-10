@@ -48,17 +48,18 @@ utils.py : 分割数据集，统计样本分布等基础功能函数
 ## 3.依赖环境及运行方法
 
 **依赖**
+
 python版本：python3.7
 
 CUDA版本：CUDA:10.0
 
 依赖库：
-pytorch 1.1
-efficientnet_pytorch
-tensorboardX
-time
-logging
-以及常用库
+- pytorch 1.1
+- efficientnet_pytorch
+- tensorboardX
+- time
+- logging
+- 以及常用库
 
 **运行方法**
 在main.c文件中修改以下类的默认参数，配置实验使用的网络及其参数（请确保数据已按目录分割好）
